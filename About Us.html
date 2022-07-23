@@ -2,7 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -76,62 +81,119 @@ html {
 </head>
 <body>
 
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="https://t6kuruvilla.github.io/tkuruvillaucb2021/index" class="w3-bar-item w3-button w3-wide">HOME</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#team" class="w3-bar-item w3-button">THE TEAM</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">THE</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+</header>
+
+
+
 <div class="about-section">
-  <h1>About Us Page</h1>
+  <h1>About Us</h1>
   <p>We are a group of UC Berkely W209 students who are sports enthusiasts—doing an analysis on men's World Cup Football over the years. </p>
 </div>
 
-<h2 style="text-align:center">Our Team</h2>
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="https://t6kuruvilla.github.io/tkuruvillaucb2021/Carlos%20Moreno.jpg" alt="Carlos" style="width:100%">
-      <div class="container">
-        <h2>Carlos Moreno</h2>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>carlos.moreno@ischool.berkeley.edu</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
 
-  <div class="column">
-    <div class="card">
-      <img src="https://t6kuruvilla.github.io/tkuruvillaucb2021/Carlos%20R.%20Ortiz-Gomez.jpg" alt="Carlos" style="width:100%">
-      <div class="container">
-        <h2>Carlos R. Ortiz-Gomez</h2>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>crortiz@ischool.berkeley.edu</p>
-        <p><button class="button">Contact</button></p>
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center"><b>THE TEAM</b></h3>
+  <p class="w3-center w3-large">The Football Afficionados Behind This Project</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://t6kuruvilla.github.io/tkuruvillaucb2021/Theresa.jpg" alt="Theresa" style="width:100%">
+        <div class="w3-container">
+          <h3>Theresa Kuruvilla</h3>
+          <p class="w3-opacity">W209 | Section 1 | Summer 2022</p>
+          <p>World Cup history and FIFA World Cup 2022.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://t6kuruvilla.github.io/tkuruvillaucb2021/Carlos%20R.%20Ortiz-Gomez.jpg" alt="CarlosG" style="width:100%">
+        <div class="w3-container">
+          <h3>Carlos R. Ortiz-Gomez</h3>
+          <p class="w3-opacity">W209 | Section 1 | Summer 2022</p>
+          <p>FIFA Ranking vs World Cup Performance.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://t6kuruvilla.github.io/tkuruvillaucb2021/Carlos%20Moreno.jpg" alt="CarlosM" style="width:100%">
+        <div class="w3-container">
+          <h3>Carlos Moreno</h3>
+          <p class="w3-opacity">W209 | Section 1 | Summer 2022</p>
+          <p>Penalty Analytics.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://t6kuruvilla.github.io/tkuruvillaucb2021/Christian%20Hiebel.jpg" alt="Christian" style="width:100%">
+        <div class="w3-container">
+          <h3>Christian Hiebel</h3>
+          <p class="w3-opacity">W209 | Section 1 | Summer 2022</p>
+          <p>Deep Dive into the 2018 FIFA World Cup.</p>
+        </div>
       </div>
     </div>
   </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<script>
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
   
-  <div class="column">
-    <div class="card">
-      <img src="https://t6kuruvilla.github.io/tkuruvillaucb2021/Christian%20Hiebel.jpg" alt="Christian" style="width:100%">
-      <div class="container">
-        <h2>Christian Hiebel</h2>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>chris.hiebel@ischool.berkeley.edu</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-  <div class="column">
-    <div class="card">
-      <img src="https://t6kuruvilla.github.io/tkuruvillaucb2021/Theresa.jpg" alt="Theresa" style="width:100%">
-      <div class="container">
-        <h2>Theresa Kuruvilla</h2>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>t6kuruvilla@ischool.berkeley.edu</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-</body>
-</html>
+  
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+  
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
+      mySidebar.style.display = "none";
+  }
+  </script>
+  
+  </body>
+  </html>
