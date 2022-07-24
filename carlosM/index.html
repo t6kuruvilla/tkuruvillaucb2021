@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
+
+    <link rel="stylesheet" href="static/css/style1.css" />
+
+    <style>
+    </style>
+
+  </head>
+  <body>
+
+    <div class="navbar">
+      <a href="templates/indexwc1.html"target="_blank">Confederation Performance</a>
+      <a href="templates/indexfifawc.html"target="_blank">FiFA Ranking &   WC Performance</a>
+      <a href="templates/indexscroll.html"target="_blank">Brief World Cup History</a>
+      <a href="index.html" class="right">Home</a>
+    </div>
+
+    <div class="columnt"><h1>Futbol (Soccer) World Cup Exploration</h1></div>
+    <div class="columnt"><img src="./static/pic/fifa-logo.png" alt="FIFA LOGO" style="width:100px;height:100px;"></div>
+
+   <div class="header">
+
+        <h2> Which FIFA Confederation has the strongest average performance?</h2>
+        <br />
+        <p>
+          FIFA, founded in 1904, is the international governing body for football, beach football and futsal. FIFA divides the 
+          countries in six regions (AFC, CAF, CONCACAF, CONMEBOL, OFC, UEFA). Each confederation implement an eliminatory process to define
+          the countries representing them in the Wold Cup, which take place every 4 year. There have been 21 world cups 
+          within 1930 and 2018.  UEFA (Europe) is the strongest confederation with the richest and best local leagues.  The following graphs explore
+          the performance of the confederations in the World Cups.  For your reference, the FIFA confederations are the following:
+        </p>
+        <ol>
+          <li>AFC = Asian Football Confederation in Asia and Australia.</li>
+          <li>CAF = Confédération Africaine de Football in Africa.</li>
+          <li>CONCACAF = Confederation of North, Central American and Caribbean Association Football in North America and Central America.</li>
+          <li>CONMEBOL = Confederación Sudamericana de Fútbol</li>
+          <li>OFC = Oceania Football Confederation in Oceania</li>
+          <li>UEFA = Union of European Football Associations</li>
+        </ol>
+
+
+    <!-- OVERALL PERFORMANCE BY CONFEDERATION -->
+        <div class="container px-2 text-center">
+          <div class="row gx-5">
+            <div class="col">
+            <div class="p-3 border bg-light">
+                <h5>CONMEBOL has slightly better average performance across all world cups.</h5>
+                <div> 
+                  <h7>Select Metric, Click button:</h7>
+                  <select id="select3"></select>
+                  <button id="Buton2">Click Button</button>
+                </div>
+                <div id="chart0"></div>
+            </div>
+            </div>
+            <div class="col">
+              <div class="p-3 border bg-light">
+                <h5> CONMEBOL (South America) and UEFA (Europe) have won 8 and 12 world cups.</h5>
+                <br /><br />
+                <div id="chart01"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div><p>** The graph presents average performance between 1930 and 2018 world cups.</p></div>
+
+   </div>
+
+<hr size="2" noshade>
+
+<!-- CONFEDERATION PERFOMANCE ACROSS THE YEARS -->
+
+
+<div class="header">
+
+  <h2> Which confederation and country perform the best in a selected World Cup?</h2>
+  <br />
+    <p>
+      In the following graphs, you would be able to explore the performance of the FIFA confederations in 
+      a selected World Cup for a selected metric.  In addition, you can explore the performance of the top countries.  
+      There have been 21 world cups implemented within 1930 and 2018, and only eight countries have won it 
+      - Brazil, Germany, Italy, France, Argentina, Uruguay, Spain, and England. 
+    </p>
+
+  <div class="container px-1 text-center">
+    <div class="row gx-5">
+      <div class="col">
+       <div class="p-3 border bg-light">
+
+        <h8>Select Year & Metric:</h8>
+        <select id="select1"></select>
+        <select id="select2"></select>
+        <button id="Buton1">Click Button</button>
+        <div id="chart1"></div>   
+
+       </div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">
+          
+          <h7 id="id01">World Cup</h7>
+          <div id="chart2"></div>      
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row gx-5">
+      <div class="col">
+        <div class="p-3 border bg-light">
+        
+          <h4>Comparing FIFA Confederation Performance across four key metrics:</h4>
+          <h5>As expected, confederations have a consisten performance across metrics.</h5>
+          <div id="chart1f"></div>
+
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<hr size="2" noshade>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+
+ 
+    <!-- <script type="text/javascript" src="../static/js/script.js"></script> -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="./static/js/wc.js"></script>
+    <script src="./static/js/fifa.js"></script>
+    <script src="./static/js/vars.js"></script>
+    <!-- <script src="../static/js/script.js"></script> -->
+    <script src="./static/js/scriptwc.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

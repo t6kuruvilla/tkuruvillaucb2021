@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=900, initial-scale=1.0"> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
+
+    <link rel="stylesheet" href="../static/css/style1.css" />
+
+    <style>
+        .holder {
+            display: flex;
+        }
+        
+        .steps {
+            width: 50%;
+        }
+        
+        .step {
+            margin-top: 100px;
+            min-height: 600px;
+        }
+        
+        #chart {
+            width: 20%;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            margin-top: 5px;
+            margin-right: 50px;
+            position: sticky;
+            top: 0px;
+            left: 0px;
+            width: 400px;
+            height: 400px;
+        }
+
+
+        #chart1 {
+            width: 30%;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            margin-top: 5px;
+            margin-right: 50px;
+            position: sticky;
+            top: 0px;
+            left: 0px;
+            width: 400px;
+            height: 400px;
+        }
+
+        #chart2{
+            width: 30%;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            margin-top: 5px;
+            margin-right: 50px;
+            position: sticky;
+            top: 0px;
+            left: 0px;
+            width: 400px;
+            height: 400px;
+        }
+        
+        #outro {
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="../templates/indexwc1.html"target="_blank">Confederation Performance</a>
+        <a href="../templates/indexfifawc.html"target="_blank">FiFA Ranking &   WC Performance</a>
+        <a href="../templates/indexscroll.html"target="_blank">Brief World Cup History</a>
+        <a href="../index.html" class="right">Home</a>
+    </div>
+
+  <div class="header">
+    
+    <div class="container px-1 text-left">
+        <div class="row gx-5">
+          <div class="col">
+                <div class="p-3 border bg-light">
+                    <h4>A Brief History of Futbol (Soccer) World Cups</h4>
+                        <p>
+                            FIFA is an international governing body for football, beach football and futsal. FIFA divides the 
+                            countries in six regions (AFC, CAF, CONCACAF, CONMEBOL, OFC, UEFA). Wold Cups are implemented every 4 year, 
+                            and there have been 21 world cups 
+                            within 1930 and 2018. The following graphs provide a brief history of the world cups from 1930 to 2018.
+                            The FIFA confederations are the following:
+                        </p>
+                </div>
+          </div>
+        </div>
+        
+        <div class="row gx-5">
+            <div class="col">
+                <div class="p-3 border bg-light">
+                    <ol>
+                        <li>AFC = Asian Football Confederation in Asia and Australia.</li>
+                        <li>CAF = Confédération Africaine de Football in Africa.</li>
+                        <li>CONCACAF = Confederation of North, Central American and Caribbean Association Football in North America and Central America.</li>
+                        <li>CONMEBOL = Confederación Sudamericana de Fútbol</li>
+                        <li>OFC = Oceania Football Confederation in Oceania</li>
+                        <li>UEFA = Union of European Football Associations</li>
+                    </ol>
+                </div>
+           </div>
+        </div>
+
+    </div>
+
+    <hr />
+    <section>
+        <div>
+            <h4>Scroll Down to explore the different world cups:</h4>
+        </div>
+        <div> 
+            <h7>Select Metric and Click on button:</h7>
+            <select id="select1"></select>
+            <button id="Buton1">Click Button</button>
+      </div>    
+        <div class="holder">
+         
+            <!-- <svg id="chart"></svg> -->
+            <div class="row"><div id="chart"></div></div>
+            <div class="row"><div id="chart1"></div></div>
+
+
+            <!-- <div></div>
+            <div><div id="chart1"></div></div> -->
+            <div class="steps">
+                <div class="step"><h3>A Brief History of Futbol World Cups:</h3>
+                    There have been 21 world cups between 1930 and 2018. Only eight countries
+                    have won the world cup. Brazil is the most successful country with 5 world cups.
+                </div>
+                <div class="step"><h3>World Cup: 1930</h3>
+                    <ol>
+                        <li>Host: Uruguay.</li>
+                        <li>Champion: Uruguay. (Score: 4:2)</li>
+                        <li>Runner-up: Argentina.</li>
+                        <li>Third Place: USA</li>
+                        <li>Fourth Place:  Yugoslavia</li>
+                        <li>Number of Teams: 13</li>
+                      </ol>
+                    
+                </div>
+                <div class="step"><h3>World Cup: 1934</h3>
+                    <ol>
+                        <li>Host: Italy</li>
+                        <li>Champion: Italy (Score: 2:1)</li>
+                        <li>Runner-up: Czechoslovakia</li>
+                        <li>Third Place: Germany</li>
+                        <li>Fourth Place: Austria</li>
+                        <li>Number of Teams: 16</li>
+                      </ol>
+
+                </div>
+                <div class="step"><h3>World Cup: 1938</h3>
+                    <ol>
+                        <li>Host: France</li>
+                        <li>Champion: Italy (Score: 4:2)</li>
+                        <li>Runner-up: Hungary</li>
+                        <li>Third Place: Brazil</li>
+                        <li>Fourth Place: Sweden</li>
+                        <li>Number of Teams: 15</li>
+                      </ol>
+                </div>
+                <div class="step"><h3>World Cup: 1950</h3>
+                    <ol>
+                        <li>Host: Brazil</li>
+                        <li>Champion: Uruguay (Score: 2-1)</li>
+                        <li>Runner-up: Brazil</li>
+                        <li>Third Place: Sweden</li>
+                        <li>Fourth Place: Spain</li>
+                        <li>Number of Teams: 13</li>
+                      </ol>
+                </div>
+                <div class="step"><h3>World Cup: 1954</h3>
+                    <ol>
+                        <li>Host: Switzerland</li>
+                        <li>Champion: Germany (Score: 3-2)</li>
+                        <li>Runner-up: Hungary</li>
+                        <li>Third Place: Austria</li>
+                        <li>Fourth Place: Uruguay</li>
+                        <li>Number of Teams: 16</li>
+                      </ol>
+                </div>
+                <div class="step"><h3>World Cup: 1958</h3>
+                    <ol>
+                        <li>Host: Sweden</li>
+                        <li>Champion: Brazil (Score: 5-2)</li>
+                        <li>Runner-up: Sweden</li>
+                        <li>Third Place: France</li>
+                        <li>Fourth Place: Germany</li>
+                        <li>Number of Teams: 16</li>
+                      </ol>
+                </div>
+                <div class="step"><h3>World Cup: 1962</h3>
+                    <ol>
+                        <li>Host: Chile</li>
+                        <li>Champion: Brazil (Score: 3-1)</li>
+                        <li>Runner-up: Czechoslovakia</li>
+                        <li>Third Place: Chile</li>
+                        <li>Fourth Place: Yugoslavia</li>
+                        <li>Number of Teams: 16</li>
+                      </ol>
+                </div>
+                <div class="step"><h3>World Cup: 1966</h3>
+                    <ol>
+                        <li>Host: England</li>
+                        <li>Champion: England (Score: 4-2)</li>
+                        <li>Runner-up: Germany</li>
+                        <li>Third Place: Portugal</li>
+                        <li>Fourth Place: Soviet Union</li>
+                        <li>Number of Teams: 16</li>
+                      </ol>
+                </div>
+                <div class="step"><h3>World Cup: 1970</h3>
+                    <ol>
+                        <li>Host: Mexico</li>
+                        <li>Champion: Brazil (Score: 4-1)</li>
+                        <li>Runner-up: Italy</li>
+                        <li>Third Place: Germany</li>
+                        <li>Fourth Place: Uruguay</li>
+                        <li>Number of Teams: 16</li>
+                      </ol>
+                </div>
+                <div class="step"><h3>World Cup: 1974</h3>
+                    <ol>
+                        <li>Host: Germany</li>
+                        <li>Champion: Germany (Score:2-1)</li>
+                        <li>Runner-up: Netherlands</li>
+                        <li>Third Place: Poland</li>
+                        <li>Fourth Place: Brazil</li>
+                        <li>Number of Teams: 16</li>
+                      </ol>
+                </div>
+                <div class="step"><h3>World Cup: 1978</h3>
+                    <ol>
+                        <li>Host: Argentina</li>
+                        <li>Champion: Argentina (Score: 3-1)</li>
+                        <li>Runner-up: Netherlands</li>
+                        <li>Third Place: Brazil</li>
+                        <li>Fourth Place: Italy</li>
+                        <li>Number of Teams: 16</li>
+                      </ol>
+                </div>
+                <div class="step"><h3>World Cup: 1982</h3>
+                    <ol>
+                        <li>Host: Spain</li>
+                        <li>Champion: Italy (Score: 3-1)</li>
+                        <li>Runner-up: Germany</li>
+                        <li>Third Place: Poland</li>
+                        <li>Fourth Place: France</li>
+                        <li>Number of Teams: 24</li>
+                      </ol>
+                </div>
+                <div class="step"><h3>World Cup: 1986</h3>
+                    <ol>
+                        <li>Host: Mexico</li>
+                        <li>Champion: Argentina (Score: 3-2)</li>
+                        <li>Runner-up: Germany</li>
+                        <li>Third Place: France</li>
+                        <li>Fourth Place: Belgium</li>
+                        <li>Number of Teams: 24</li>
+                      </ol>
+                </div>
+                <div class="step"><h3>World Cup: 1990</h3>
+                    <ol>
+                        <li>Host: Italy</li>
+                        <li>Champion: Germany (Score: 1-0)</li>
+                        <li>Runner-up: Argentina</li>
+                        <li>Third Place: Italy</li>
+                        <li>Fourth Place: England</li>
+                        <li>Number of Teams: 24</li>
+                      </ol>
+                </div>
+                <div class="step"><h3>World Cup: 1994</h3>
+                    <ol>
+                        <li>Host: USA</li>
+                        <li>Champion: Brazil (Score: 0-0, 3-2)</li>
+                        <li>Runner-up: Italy</li>
+                        <li>Third Place: Sweden</li>
+                        <li>Fourth Place: Bulgary</li>
+                        <li>Number of Teams: 24</li>
+                      </ol>
+                </div>
+                <div class="step"><h3>World Cup: 1998</h3>
+                    <ol>
+                        <li>Host: France</li>
+                        <li>Champion: France (Score: 3-0)</li>
+                        <li>Runner-up: Brazil</li>
+                        <li>Third Place: Croatia</li>
+                        <li>Fourth Place: Neatherlands</li>
+                        <li>Number of Teams: 32</li>
+                      </ol>
+                </div>
+                <div class="step"><h3>World Cup: 2002</h3>
+                    <ol>
+                        <li>Host: South Korea, Japan</li>
+                        <li>Champion: Brazil (Score: 2-0)</li>
+                        <li>Runner-up: Germany</li>
+                        <li>Third Place: Turkey</li>
+                        <li>Fourth Place: South Korea</li>
+                        <li>Number of Teams: 32</li>
+                      </ol>
+                </div>
+                <div class="step"><h3>World Cup: 2006</h3>
+                    <ol>
+                        <li>Host: Germany</li>
+                        <li>Champion: Italy (Score: 1-1; 5-3p)</li>
+                        <li>Runner-up: France</li>
+                        <li>Third Place: Germany</li>
+                        <li>Fourth Place: Portugal</li>
+                        <li>Number of Teams: 32</li>
+                      </ol>
+                </div>
+                <div class="step"><h3>World Cup: 2010</h3>
+                    <ol>
+                        <li>Host: South Africa</li>
+                        <li>Champion: Spain (Score: 1-0)</li>
+                        <li>Runner-up: Netherlands</li>
+                        <li>Third Place: Germany</li>
+                        <li>Fourth Place: Uruguay</li>
+                        <li>Number of Teams: 32</li>
+                      </ol>
+                </div>
+                <div class="step"><h3>World Cup: 2014</h3>
+                    <ol>
+                        <li>Host: Brazil</li>
+                        <li>Champion: Germany (Score: 1-0)</li>
+                        <li>Runner-up: Argentina</li>
+                        <li>Third Place: Netherlands</li>
+                        <li>Fourth Place: Brazil</li>
+                        <li>Number of Teams: 32</li>
+                      </ol>
+                </div>
+                <div class="step"><h3>World Cup: 2018</h3>
+                    <ol>
+                        <li>Host: Russia</li>
+                        <li>Champion: France (Score: 4-2)</li>
+                        <li>Runner-up: Croatia</li>
+                        <li>Third Place: Belgium</li>
+                        <li>Fourth Place: England</li>
+                        <li>Number of Teams: 32</li>
+                      </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h4>Though UEFA and CONMEBOL countries have won all the worldcups, Asian and African countries have improved.</h4>
+        <p>
+            Though, countries belonging to Africa (CAF) and Asia (AFC) have a relatively strong performance, their performance has decreased in the last worldcups. 
+            Please go the "Confederation Performance" tab to see more details about it."
+         </p>
+
+            <div><div id="chart2"></div></div>  
+    </section>
+
+    <nav>
+        <h4> When finish, use this link to go back to home page.</h4>
+        <ul>
+          <a href="../index.html">Go back to Home Page</a>
+        </ul>
+      </nav>
+
+    <section id="outro"></section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+
+            <!-- <script src="https://d3js.org/d3.v6.js"></script> -->
+    <script src="https://unpkg.com/intersection-observer"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script src="../static/js/wc.js"></script>
+    <script src="../static/js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+
+</html>

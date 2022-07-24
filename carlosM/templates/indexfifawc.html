@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
+
+    <link rel="stylesheet" href="../static/css/style1.css" />
+
+    <style>
+    </style>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <div class="navbar">
+        <a href="../templates/indexwc1.html"target="_blank">Confederation Performance</a>
+        <a href="../templates/indexfifawc.html"target="_blank">FiFA Ranking &   WC Performance</a>
+        <a href="../templates/indexscroll.html"target="_blank">Brief World Cup History</a>
+        <a href="../index.html" class="right">Home</a>
+      </div>
+
+
+   <!-- MAIN HEADER FOR FIRST CONTAINER -->
+    <div class="header">
+        <h4>FIFA Ranking and World Cup Performance</h4>
+        <p>
+          FIFA releases a weekly/monthly ranking for all teams. The graph below explores how the FIFA ranking relates to World Cup performance.
+          The blue line presents FIFA ranking since 1993, and the red dots indicate the position of the country in the wold cup (the lower the better).
+        </p>
+        <div class="container px-1 text-center">
+            <div class="row gx-5">
+              <div class="col">
+               <div class="p-3 border bg-light">
+
+                    <h7>Select COUNTRY and click button:</h7>
+                    <select id="select4"></select>
+                    <button id="Buton4">Click Button</button>
+                    <div id="chart4" class="center"></div>
+                    <br />
+                    <h7>In BLUE: FIFA ranking; in RED: world cup position (the lower the better).</h7>
+
+               </div>
+              </div>
+            </div>
+
+            <div class="row gx-5">
+                <div class="col">
+                 <div class="p-3 border bg-light"><h5>Brazil and Spain had the most number one ranking, with Germany and Argentina having similar level of number one FIFA ranking.</h5></div>
+                </div>
+                <div class="col">
+                  <div class="p-3 border bg-light"><h5>There is some relation between ranking and world cup performance, though Argentina has underperformed while France has surpassed expectations.</h5></div>
+                </div>
+              </div>
+
+            <div class="row gx-5">
+
+                <div class="col">
+                    <div class="p-3 border bg-light">
+                        <div id="chart4a" class="center"></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="p-3 border bg-light">
+                        <div id="chart4b" class="center"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+   </div>    <!-- END FOR CLASS HEADER -->
+
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+
+ 
+    <!-- <script type="text/javascript" src="../static/js/script.js"></script> -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="../static/js/wc.js"></script>
+    <script src="../static/js/fifa.js"></script>
+    <script src="../static/js/vars.js"></script>
+    <!-- <script src="../static/js/script.js"></script> -->
+    <script src="../static/js/scriptfifawc.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

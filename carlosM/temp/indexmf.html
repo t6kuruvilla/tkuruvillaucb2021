@@ -1,0 +1,286 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/heatmapjs@2.0.2/heatmap.min.js"></script> -->
+
+  <link rel="stylesheet" href="./static/css/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> -->
+
+  <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</head>
+
+<body>
+  
+  <div class='container main'>
+
+    <div class="row">
+      <div class="col-md-12">
+              <h1>Select Type of Data</h1>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <form>
+        <div class="form-group">
+          <ul class="list-group" id="filters">
+            <li class="filter list-group-item">
+
+            <div class="form-group">
+              <label for="tdatacontrol1">Select Type of Data</label>
+              <select class="form-control" id="tdatacontrol1">
+              </select>
+              <label for="nweeks">Select Number of Weeks</label>
+              <select class="form-control" id="nweeks">
+              </select>
+              <button id="btn1_tdata" type="button" class="btn btn-default">Select Data Type</button>
+
+            </div>
+          </li>
+        </ul>
+  
+      </form>
+
+    </div>
+
+    <div class="row">
+        <!-- <div class="col-md-12 jumbotron text-center"> -->
+        <div class="col-md-12">
+                <h1>District Performance</h1>
+          <p>Performance per District</p>
+        </div>
+      </div>
+  
+  <div class="row">
+
+    <div class='col-lg-12 box'>
+
+    <div id="tester" style="width:1200px;height:600px;"></div>
+
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class='col-lg-3 box'>
+         
+        <aside class="filters">
+          <div class="panel panel-default">
+            <div class="panel-heading">Filter Search</div>     
+              <div class="panel-body">
+
+                  <form>
+                      <div class="form-group">
+                        <ul class="list-group" id="filters">
+                          <li class="filter list-group-item">
+
+                              <div class="form-group">
+                                  <label for="dmcontrol">Select District</label>
+                                  <select class="form-control" id="dmcontrol">
+                                  </select>
+                                </div>
+
+
+                          </li>
+                          <li class="filter list-group-item">
+
+                              <div class="form-group">
+                                  <label for="prdcontrol">Select Product</label>
+                                  <select class="form-control" id="prdcontrol">
+                                  </select>
+                                </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button id="filter-btn" type="button" class="btn btn-default">Distric-Product</button>
+                    </form>
+
+              </div>
+            </div>
+          </aside>
+    </div>
+
+    <div class="col-md-9">
+        <div id="table-area" class="">
+          <table id="tertable" class="table table-striped">
+            <thead>
+              <tr>
+                <th class="table-head">Territory</th>
+                <th class="table-head">Last Measure</th>
+                <th class="table-head">Pre. Measure</th>
+                <th class="table-head">% Change</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+  </div>
+
+      <div class="row">
+          <!-- <div class="col-md-12 jumbotron text-center"> -->
+          <div class="col-md-12">
+                  <h1>Product Performance</h1>
+            <p>Country Level and by District</p>
+          </div>
+        </div>
+
+        <div class="row">
+
+            <div class='col-lg-12 box'>
+        
+            <div id="tester1" style="width:1200px;height:600px;"></div>
+        
+            </div>
+        
+          </div>
+          <div class="row">
+
+              <div class='col-lg-3 box'>
+                   
+                  <aside class="filters">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">Filter Search</div>     
+                        <div class="panel-body">
+          
+                            <form>
+                                <div class="form-group">
+                                  <ul class="list-group" id="filters">
+                                    <li class="filter list-group-item">
+          
+                                        <div class="form-group">
+                                            <label for="prdcontrol1">Select Product</label>
+                                            <select class="form-control" id="prdcontrol1">
+                                            </select>
+                                          </div>
+          
+          
+                                    </li>
+                                  </ul>
+                                </div>
+                                <button id="filter-btn1" type="button" class="btn btn-default">Process Product</button>
+                            </form>
+          
+                        </div>
+                      </div>
+                    </aside>
+              </div>
+          
+              <div class="col-md-9">
+                  <div id="table-area" class="">
+                    <table id="prdtable" class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th class="table-head">District</th>
+                          <th class="table-head">Last Measure</th>
+                          <th class="table-head">Pre. Measure</th>
+                          <th class="table-head">% Change</th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+                  </div>
+                </div>
+          
+            </div>
+                  
+            <div class="row">
+                <!-- <div class="col-md-12 jumbotron text-center"> -->
+                <div class="col-md-12">
+                        <h1>Product Performance at Country Level</h1>
+                  <p>Country Level</p>
+                </div>
+              </div>
+      
+              <div class="row">
+      
+                  <div class='col-lg-12 box'>
+              
+                  <div id="tester2" style="width:1200px;height:800px;"></div>
+              
+                  </div>
+              
+                </div>
+
+                <div class="row">
+
+                  <div class='col-lg-3 box'>
+         
+                    <aside class="filters">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">Filter Search</div>     
+                          <div class="panel-body">
+            
+                              <form>
+                                  <div class="form-group">
+                                    <ul class="list-group" id="filters">
+                                      <li class="filter list-group-item">
+            
+                                          <div class="form-group">
+                                              <label for="dmcontrol">Select District</label>
+                                              <select class="form-control" id="dmcontrol-d3">
+                                              </select>
+                                            </div>
+            
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <button id="filter-btn-d3" type="button" class="btn btn-default">Distric</button>
+                                </form>
+            
+                          </div>
+                        </div>
+                      </aside>
+                </div>
+            
+                    <div class="col-md-9">
+                        <div id="table-area" class="">
+                          <table id="coutable" class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th class="table-head">Product</th>
+                                <th class="table-head">Last Measure</th>
+                                <th class="table-head">Pre. Measure</th>
+                                <th class="table-head">% Change</th>
+                              </tr>
+                            </thead>
+                            <tbody></tbody>
+                          </table>
+                        </div>
+                      </div>
+      
+                
+                </div>
+
+
+
+</div>
+
+  <hr>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+      <script src="static/js/script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
+
+    <link rel="stylesheet" href="../static/css/style1.css" />
+
+    <style>
+    </style>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    <div class="navbar">
+      <a href="../templates/indexwc1.html"target="_blank">Confederation Performance</a>
+      <a href="../templates/indexfifawc.html"target="_blank">FiFA Ranking &   WC Performance</a>
+      <a href="../templates/indexscroll.html"target="_blank">Brief World Cup History</a>
+      <a href="../index.html" class="right">Home</a>
+    </div>
+   
+   <div class="header">
+
+
+<!-- START EXPLORING PERFORMANCE OF CONFEDERATIONS ACCROSS THE YEARS -->
+<div class="header">
+    <h2> How is the performance of the FIFA confederations across the years?</h2>
+    <br />
+    <div class="container px-4 text-center">
+      <div class="row gx-5">
+        <div class="col">
+         <div class="p-3 border bg-light">
+
+                <h5>Futbol continues to develop in Asia and Africa</h5>
+                <h7>Select Metric and click button:</h7>
+                <select id="select5"></select>
+                <button id="Buton5">Click Button</button>
+                <br /><br />
+                <div id="chart3"></div>
+
+         </div>
+        </div>
+      </div>
+
+      <div class="row gx-5">
+        <div class="col">
+         <div class="p-3 border bg-light">
+
+          
+              <h5>However, Asia and Africa have declined performance in the last world cups</h5>
+              <h7>Select Confederation and click button:</h7>
+              <select id="select6"></select>
+              <button id="Buton6">Click Button</button>
+              <br /><br />
+
+              <div id="chart3a"></div>
+
+
+         </div>
+        </div>
+      </div>  
+
+    </div>
+  </div>
+<!-- END OF EXPLORING CONFEDERATION PERFORMANCE ACROSS YEARS -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+
+ 
+    <!-- <script type="text/javascript" src="../static/js/script.js"></script> -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="../static/js/wc.js"></script>
+    <script src="../static/js/fifa.js"></script>
+    <script src="../static/js/vars.js"></script>
+    <!-- <script src="../static/js/script.js"></script> -->
+    <script src="../static/js/wcconf1.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
