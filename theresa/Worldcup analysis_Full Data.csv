@@ -1,0 +1,76 @@
+﻿Continent,Country,Group,Have won title,Select countries that are:,Games Played,Goal Diff#,Goals Ag#,Goals for,Lost,No# of Finals,Number of Records,Points (3/win),Rank,Tie %,Tied,Winning %,Winning % (ties incl.),Won
+Africa,Algeria,Group C,Have yet to win a title,Playing this year,6,,10,6,3,2,1,7,46,17%,1,33%,50%,2
+Africa,Nigeria,Group B,Have yet to win a title,Playing this year,11,,16,14,6,3,1,13,35,9%,1,36%,45%,4
+Africa,Ghana,Group D,Have yet to win a title,Playing this year,4,,6,4,2,1,1,6,49,0%,0,50%,50%,2
+Africa,Ivory Coast,Group G,Have yet to win a title,Playing this year,3,,6,5,2,1,1,3,55,0%,0,33%,33%,1
+Africa,Cameroon,Group E,Have yet to win a title,Playing this year,17,-14,29,15,6,5,1,19,27,41%,7,24%,65%,4
+Africa,South Africa,Group A,Have yet to win a title,Playing this year,6,,11,8,2,2,1,6,50,50%,3,17%,67%,1
+South America,Chile,Group H,Have yet to win a title,Playing this year,25,,40,31,12,7,1,27,22,24%,6,28%,52%,7
+South America,Paraguay,Group F,Have yet to win a title,Playing this year,22,,36,27,9,7,1,25,23,32%,7,27%,59%,6
+Asia and Oceania,South Korea,Group B,Have yet to win a title,Playing this year,24,-31,53,22,13,7,1,19,29,29%,7,17%,46%,4
+Asia and Oceania,Australia,Group D,Have yet to win a title,Playing this year,7,,11,5,4,2,1,5,51,29%,2,14%,43%,1
+Asia and Oceania,North Korea,Group G,Have yet to win a title,Playing this year,4,,9,5,2,1,1,4,53,25%,1,25%,50%,1
+Asia and Oceania,Japan,Group E,Have yet to win a title,Playing this year,10,,14,8,6,3,1,8,43,20%,2,20%,40%,2
+Asia and Oceania,New Zealand,Group F,Have yet to win a title,Playing this year,3,-10,12,2,3,1,1,0,71,0%,0,0%,0%,0
+Europe,Slovenia,Group C,Have yet to win a title,Playing this year,3,,7,2,3,1,1,0,65,0%,0,0%,0%,0
+Europe,Greece,Group B,Have yet to win a title,Playing this year,3,-10,10,0,3,1,1,0,72,0%,0,0%,0%,0
+Europe,Serbia & Montenegro,Group D,Have yet to win a title,Playing this year,40,,56,62,16,10,1,56,11,20%,8,40%,60%,16
+Europe,Portugal,Group G,Have yet to win a title,Playing this year,19,11,21,32,7,4,1,34,19,5%,1,58%,63%,11
+Europe,Denmark,Group E,Have yet to win a title,Playing this year,13,,18,24,4,3,1,23,24,15%,2,54%,69%,7
+Europe,Netherlands,Group E,Have yet to win a title,Playing this year,36,21,38,59,10,8,1,58,9,28%,10,44%,72%,16
+Europe,Spain,Group H,Have yet to win a title,Playing this year,49,23,57,80,15,12,1,78,7,24%,12,45%,69%,22
+Europe,Switzerland,Group H,Have yet to win a title,Playing this year,26,-14,51,37,13,8,1,29,21,19%,5,31%,50%,8
+North and Central America,USA,Group C,Have yet to win a title,Playing this year,25,-24,51,27,16,8,1,21,25,12%,3,24%,36%,6
+North and Central America,Honduras,Group H,Have yet to win a title,Playing this year,3,,3,2,1,1,1,2,57,67%,2,0%,67%,0
+North and Central America,Mexico,Group A,Have yet to win a title,Playing this year,45,-36,84,48,22,13,1,45,15,27%,12,24%,51%,11
+South America,Argentina,Group B,Have won a title,Playing this year,65,39,74,113,19,14,1,112,4,20%,13,51%,71%,33
+South America,Brazil,Group G,Have won a title,Playing this year,92,117,84,201,14,18,1,206,1,15%,14,70%,85%,64
+South America,Uruguay,Group A,Have won a title,Playing this year,40,,57,65,15,10,1,55,12,25%,10,38%,63%,15
+Europe,England,Group C,Have won a title,Playing this year,55,27,47,74,13,12,1,92,5,31%,17,45%,76%,25
+Europe,Germany,Group D,Have won a title,Playing this year,92,78,112,190,18,16,1,184,2,21%,19,60%,80%,55
+Europe,France,Group A,Have won a title,Playing this year,51,31,64,95,16,12,1,85,6,20%,10,49%,69%,25
+Europe,Italy,Group F,Have won a title,Playing this year,77,53,69,122,14,16,1,151,3,25%,19,57%,82%,44
+Africa,Angola,Not Playing,Have yet to win a title,Not playing this year,3,,2,1,1,1,1,2,58,67%,2,0%,67%,0
+Africa,Egypt,Not Playing,Have yet to win a title,Not playing this year,4,,6,3,2,2,1,2,60,50%,2,0%,50%,0
+Africa,Morocco,Not Playing,Have yet to win a title,Not playing this year,13,,18,12,7,4,1,10,37,31%,4,15%,46%,2
+Africa,Senegal,Not Playing,Have yet to win a title,Not playing this year,5,,6,7,1,1,1,8,41,40%,2,40%,80%,2
+Africa,Togo,Not Playing,Have yet to win a title,Not playing this year,3,,6,1,3,1,1,0,66,0%,0,0%,0%,0
+Africa,Tunisia,Not Playing,Have yet to win a title,Not playing this year,12,,17,8,7,4,1,7,47,33%,4,8%,42%,1
+Africa,Zaire,Not Playing,Have yet to win a title,Not playing this year,3,-14,14,0,3,1,1,0,74,0%,0,0%,0%,0
+South America,Bolivia,Not Playing,Have yet to win a title,Not playing this year,6,-19,20,1,5,3,1,1,63,17%,1,0%,17%,0
+South America,Colombia,Not Playing,Have yet to win a title,Not playing this year,13,,23,14,8,4,1,11,36,15%,2,23%,38%,3
+South America,Ecuador,Not Playing,Have yet to win a title,Not playing this year,7,,8,7,4,2,1,9,40,0%,0,43%,43%,3
+South America,Peru,Not Playing,Have yet to win a title,Not playing this year,15,-12,31,19,8,4,1,15,32,20%,3,27%,47%,4
+Asia and Oceania,China,Not Playing,Have yet to win a title,Not playing this year,3,,9,0,3,1,1,0,70,0%,0,0%,0%,0
+Asia and Oceania,Dutch East Indies,Not Playing,Have yet to win a title,Not playing this year,1,,6,0,1,1,1,0,68,0%,0,0%,0%,0
+Asia and Oceania,Iran,Not Playing,Have yet to win a title,Not playing this year,9,-12,18,6,6,3,1,5,52,22%,2,11%,33%,1
+Asia and Oceania,Iraq,Not Playing,Have yet to win a title,Not playing this year,3,,4,1,3,1,1,0,64,0%,0,0%,0%,0
+Asia and Oceania,Israel,Not Playing,Have yet to win a title,Not playing this year,3,,3,1,1,1,1,2,59,67%,2,0%,67%,0
+Asia and Oceania,Kuwait,Not Playing,Have yet to win a title,Not playing this year,3,,6,2,2,1,1,1,61,33%,1,0%,33%,0
+Asia and Oceania,Russia2,Not Playing,Have yet to win a title,Not playing this year,37,20,44,64,14,9,1,57,10,16%,6,46%,62%,17
+Asia and Oceania,Saudi Arabia,Not Playing,Have yet to win a title,Not playing this year,13,-23,32,9,9,4,1,8,44,15%,2,15%,31%,2
+Asia and Oceania,Turkey,Not Playing,Have yet to win a title,Not playing this year,10,,17,20,4,2,1,16,31,10%,1,50%,60%,5
+Asia and Oceania,United Arab Emirates,Not Playing,Have yet to win a title,Not playing this year,3,,11,2,3,1,1,0,69,0%,0,0%,0%,0
+Europe,Austria,Not Playing,Have yet to win a title,Not playing this year,29,,47,43,13,7,1,40,17,14%,4,41%,55%,12
+Europe,Belgium,Not Playing,Have yet to win a title,Not playing this year,36,-17,63,46,17,11,1,39,18,25%,9,28%,53%,10
+Europe,Bulgaria,Not Playing,Have yet to win a title,Not playing this year,26,-31,53,22,15,7,1,17,30,31%,8,12%,42%,3
+Europe,Croatia,Not Playing,Have yet to win a title,Not playing this year,13,,11,15,5,3,1,20,26,15%,2,46%,62%,6
+Europe,Czech Republic,Not Playing,Have yet to win a title,Not playing this year,33,,49,47,16,9,1,41,16,15%,5,36%,52%,12
+Europe,East Germany,Not Playing,Have yet to win a title,Not playing this year,6,0,5,5,2,1,1,8,42,33%,2,33%,67%,2
+Europe,Hungary,Not Playing,Have yet to win a title,Not playing this year,32,30,57,87,14,9,1,48,14,9%,3,47%,56%,15
+Europe,N. Ireland,Not Playing,Have yet to win a title,Not playing this year,13,-10,23,13,5,3,1,14,34,38%,5,23%,62%,3
+Europe,Norway,Not Playing,Have yet to win a title,Not playing this year,8,,8,7,3,3,1,9,39,38%,3,25%,63%,2
+Europe,Poland,Not Playing,Have yet to win a title,Not playing this year,31,,40,44,11,7,1,50,13,16%,5,48%,65%,15
+Europe,Rep. of Ireland,Not Playing,Have yet to win a title,Not playing this year,13,0,10,10,3,3,1,14,33,62%,8,15%,77%,2
+Europe,Romania,Not Playing,Have yet to win a title,Not playing this year,21,,32,30,8,7,1,29,20,24%,5,38%,62%,8
+Europe,Scotland,Not Playing,Have yet to win a title,Not playing this year,23,-16,41,25,12,8,1,19,28,30%,7,17%,48%,4
+Europe,Sweden,Not Playing,Have yet to win a title,Not playing this year,46,,69,74,17,11,1,61,8,28%,13,35%,63%,16
+Europe,Ukraine,Not Playing,Have yet to win a title,Not playing this year,5,,7,5,2,1,1,7,45,20%,1,40%,60%,2
+Europe,Wales,Not Playing,Have yet to win a title,Not playing this year,5,0,4,4,1,1,1,6,48,60%,3,20%,80%,1
+North and Central America,Canada,Not Playing,Have yet to win a title,Not playing this year,3,,5,0,3,1,1,0,67,0%,0,0%,0%,0
+North and Central America,Costa Rica,Not Playing,Have yet to win a title,Not playing this year,10,,21,12,6,3,1,10,38,10%,1,30%,40%,3
+North and Central America,Cuba,Not Playing,Have yet to win a title,Not playing this year,3,,12,5,1,1,1,4,54,33%,1,33%,67%,1
+North and Central America,El Salvador,Not Playing,Have yet to win a title,Not playing this year,6,-21,22,1,6,2,1,0,75,0%,0,0%,0%,0
+North and Central America,Haiti,Not Playing,Have yet to win a title,Not playing this year,3,-12,14,2,3,1,1,0,73,0%,0,0%,0%,0
+North and Central America,Jamaica,Not Playing,Have yet to win a title,Not playing this year,3,,9,3,2,1,1,3,56,0%,0,33%,33%,1
+North and Central America,Trinidad & Tobago,Not Playing,Have yet to win a title,Not playing this year,3,,4,0,2,1,1,1,62,33%,1,0%,33%,0
