@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>history</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -12,18 +12,27 @@
 
 <!-- Navbar -->
 <div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#history" class="w3-bar-item w3-button w3-hide-small w3-hover-white">HISTORY</a>
+ <div class="w3-bar w3-theme-d2 w3-left-align" id="myNavbar">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" 
+  href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i>
+  </a>
+  <a href="https://t6kuruvilla.github.io/tkuruvillaucb2021/index" class="w3-bar-item w3-button w3-hide-small w3-hover-white">HOME</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">HISTORY</a>
+    </div>
+
     </div>
   </div>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"onclick="w3_open()">
+    <i class="fa fa-search"></i>
+  </a>
  </div>
 
 
 <!-- Image Header -->
 <div class="w3-display-container w3-animate-opacity">
-  <img src="C:/Users/kuruv/OneDrive/Documents/history.jpg" alt="boat" style="width:100%;min-height:350px;max-height:650px;">
+  <img src="https://t6kuruvilla.github.io/tkuruvillaucb2021/theresa/history.jpg" alt="boat" style="width:100%;min-height:350px;max-height:650px;">
   <div class="w3-container w3-display-bottommiddle w3-margin-bottom">  
     <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="">From The History</button>
   </div>
@@ -31,18 +40,31 @@
 
 
 <!-- Work Row -->
-<div class="w3-container w3-center w3-padding-12 w3-theme-l5" id="work"style="position:relative">
+<div class="w3-container w3-center w3-padding-12 w3-theme-l5" id="history"style="position:relative">
 <h2>World Cup Winners</h2></div>
-<div class="w3-container w3-justify w3-padding-12 w3-theme-l5" id="work"style="position:relative">
+<div class="w3-container w3-justify w3-padding-12 w3-theme-l5" id="history"style="position:relative">
 <p>In this, you will find information about the countries that have won the FIFA world cup since 1930. 
-Please hover over the flag icon to get information on who they beat in the finals and the host country. 
-The left side shows information about the number of world cups hosted by different continents. </p>
+The visualizations are interactive with tooltips that display additional information when hovering the mouse cursor over a visualization. 
+The left side shows information about the number of world cups hosted by different continents. 
+</p>
 </div>
 
 <div class="w3-card w3-transparent">
   <div class="w3-container">
   <body> 
-	<div class='tableauPlaceholder' id='viz1657977511580' style='position: relative'><noscript><a href='#'><img alt='FIFA World Cup ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FI&#47;FIFAWorldCupWinnersRunnerupdataset2_1&#47;FIFAWorldCup&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='FIFAWorldCupWinnersRunnerupdataset2_1&#47;FIFAWorldCup' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FI&#47;FIFAWorldCupWinnersRunnerupdataset2_1&#47;FIFAWorldCup&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1657977511580');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='1027px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+	<div class='tableauPlaceholder' id='viz1657977511580' style='position: relative'><noscript><a href='#'><img alt='FIFA World Cup ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FI&#47;FIFAWorldCupWinnersRunnerupdataset2_1&#47;FIFAWorldCup&#47;1_rss.png' style='border: none' /></a></noscript>
+    <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='FIFAWorldCupWinnersRunnerupdataset2_1&#47;FIFAWorldCup' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FI&#47;FIFAWorldCupWinnersRunnerupdataset2_1&#47;FIFAWorldCup&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' />
+    </object>
+  </div>                
+  <script type='text/javascript'>                    
+
+  var divElement = document.getElementById('viz1657977511580');                    
+var vizElement = divElement.getElementsByTagName('object')[0];                    
+vizElement.style.width='1000px';vizElement.style.height='1027px';                    
+var scriptElement = document.createElement('script');                    
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
   <body>
   </div>
   </div>
@@ -75,7 +97,22 @@ The left side shows information about the number of world cups hosted by differe
         </li>
 	<div class="w3-container">
         <body> 
-	<div class='tableauPlaceholder' id='viz1658688590629' style='position: relative'><noscript><a href='#'><img alt='Goals analysis (2) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Go&#47;GoalAnalysis_16557121263610&#47;Goalsanalysis2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GoalAnalysis_16557121263610&#47;Goalsanalysis2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Go&#47;GoalAnalysis_16557121263610&#47;Goalsanalysis2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1658688590629');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+	       <div class='tableauPlaceholder' id='viz1658688590629' style='position: relative'><noscript>
+          <a href='#'><img alt='Goals analysis (2) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Go&#47;GoalAnalysis_16557121263610&#47;Goalsanalysis2&#47;1_rss.png' style='border: none' /></a>
+        </noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+          <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GoalAnalysis_16557121263610&#47;Goalsanalysis2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Go&#47;GoalAnalysis_16557121263610&#47;Goalsanalysis2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object>
+        </div>  
+                       <script type='text/javascript'>                    
+                        var divElement = document.getElementById('viz1658688590629');                    
+                        var vizElement = divElement.getElementsByTagName('object')[0];                    
+                        if ( divElement.offsetWidth > 800 ) 
+                          { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                        else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+                      else { vizElement.style.width='100%';vizElement.style.height='827px';}                     
+                    var scriptElement = document.createElement('script');                    
+                  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+              </script>
 	<body>
       </ul>
     </div>
@@ -92,7 +129,20 @@ The left side shows information about the number of world cups hosted by differe
         </li>
 	<div class="w3-container">
         <body> 
-	<div class='tableauPlaceholder' id='viz1658689565337' style='position: relative'><noscript><a href='#'><img alt='World Cup Winning Percentage ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;Worldupwinning&#47;Worldcupwinning&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Worldupwinning&#47;Worldcupwinning' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;Worldupwinning&#47;Worldcupwinning&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1658689565337');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='977px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+	<div class='tableauPlaceholder' id='viz1658689565337' style='position: relative'><noscript><a href='#'><img alt='World Cup Winning Percentage ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;Worldupwinning&#47;Worldcupwinning&#47;1_rss.png' style='border: none' /></a>
+  </noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Worldupwinning&#47;Worldcupwinning' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;Worldupwinning&#47;Worldcupwinning&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object>
+</div>                
+<script type='text/javascript'>                    
+    var divElement = document.getElementById('viz1658689565337');                    
+    var vizElement = divElement.getElementsByTagName('object')[0];                    
+    if ( divElement.offsetWidth > 800 ) 
+      { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+    else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
+  else { vizElement.style.width='100%';vizElement.style.height='977px';}                     
+var scriptElement = document.createElement('script');                    
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
         <body>
       </ul>
     </div>
@@ -106,16 +156,11 @@ The left side shows information about the number of world cups hosted by differe
 
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-theme-d1 w3-center">
-  
-  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
-    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-  </div>
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 </footer>
 
-<script>
+
 // Script for side navigation
 function w3_open() {
   var x = document.getElementById("mySidebar");
