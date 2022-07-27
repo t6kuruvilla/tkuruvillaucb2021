@@ -47,7 +47,7 @@ function initdropmenu(){
         // width: 400,
         mark: 'bar',
         encoding: {
-          x: {field: 'confederation',  type: 'ordinal',sort: "-y" },
+          x: {field: 'confederation',  type: 'ordinal',sort: "-y", title: "Confederation" },
           y: {field: metric, aggregate: 'mean', type: 'quantitative', sort: "ascending"},
           tooltip: [{field: metric, aggregate: 'mean', type: 'quantitative'},
                     {field: 'confederation', type: 'ordinal'}],
@@ -75,7 +75,7 @@ function initdropmenu(){
                         width: widthg,
                         mark: 'bar',
                         encoding: {
-                        x: {field: 'confederation',  type: 'ordinal',sort: "-y" },
+                        x: {field: 'confederation',  type: 'ordinal',sort: "-y", title: "Confederation"},
                         y: {field: "Points", aggregate: 'mean', type: 'quantitative', sort: "ascending"},
                         tooltip: [{field: "Points", aggregate: 'mean', type: 'quantitative'},
                                     {field: 'confederation', type: 'ordinal'}],
@@ -86,7 +86,7 @@ function initdropmenu(){
                         width: widthg,
                         mark: 'bar',
                         encoding: {
-                        x: {field: 'confederation',  type: 'ordinal',sort: "-y" },
+                        x: {field: 'confederation',  type: 'ordinal',sort: "-y", title: "Confederation" },
                         y: {field: "Goals For", aggregate: 'mean', type: 'quantitative', sort: "ascending"},
                         tooltip: [{field: "Goals For", aggregate: 'mean', type: 'quantitative'},
                                     {field: 'confederation', type: 'ordinal'}],
@@ -98,7 +98,7 @@ function initdropmenu(){
                         width: widthg,
                         mark: 'bar',
                         encoding: {
-                        x: {field: 'confederation',  type: 'ordinal',sort: "-y" },
+                        x: {field: 'confederation',  type: 'ordinal',sort: "-y", title: "Confederation" },
                         y: {field: "Goals Against", aggregate: 'mean', type: 'quantitative', sort: "ascending"},
                         tooltip: [{field: "Goals Against", aggregate: 'mean', type: 'quantitative'},
                                     {field: 'confederation', type: 'ordinal'}],
@@ -109,7 +109,7 @@ function initdropmenu(){
                         width: widthg,
                         mark: 'bar',
                         encoding: {
-                        x: {field: 'confederation',  type: 'ordinal',sort: "-y" },
+                        x: {field: 'confederation',  type: 'ordinal',sort: "-y", title: "Confederation" },
                         y: {field: "Win", aggregate: 'mean', type: 'quantitative', sort: "ascending"},
                         tooltip: [{field: "Win", aggregate: 'mean', type: 'quantitative'},
                                     {field: 'confederation', type: 'ordinal'}],
@@ -134,7 +134,7 @@ function initdropmenu(){
         // width: 400,
         mark: 'bar',
         encoding: {
-          x: {field: 'country',  type: 'ordinal',sort: "-y" },
+          x: {field: 'country',  type: 'ordinal',sort: "-y", title: "Country" },
           y: {field: 'won', type: 'quantitative', sort: "ascending"},
           tooltip: [{field: 'won', type: 'quantitative'},
                     {field: 'country', type: 'ordinal'}],
@@ -157,7 +157,7 @@ function initdropmenu(){
         // width: 400,
         mark: 'bar',
         encoding: {
-          x: {field: 'confederation',  type: 'ordinal',sort: "-y" },
+          x: {field: 'confederation',  type: 'ordinal',sort: "-y", title: "Confederation" },
           y: {field: metric, aggregate: 'mean', type: 'quantitative', sort: "ascending"},
           tooltip: [{field: metric, aggregate: 'mean', type: 'quantitative'},
                     {field: 'confederation', type: 'ordinal'}],

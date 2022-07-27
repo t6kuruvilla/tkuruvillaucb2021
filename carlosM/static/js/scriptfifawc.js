@@ -53,8 +53,8 @@ function initdropmenu(){
             height: 250,
             mark: {type: 'line', point: true, fill: "white"},
             encoding: {
-            x: {field: 'rank_date', type: 'temporal'},
-            y: {field: 'rank', type: 'quantitative'},
+            x: {field: 'rank_date', type: 'temporal', title: "Year"},
+            y: {field: 'rank', type: 'quantitative', title: "Rank/Position"},
             tooltip: [{field: 'rank', type: 'quantitative'}]
             }
         },
@@ -66,8 +66,8 @@ function initdropmenu(){
             mark: {type: 'point', color: 'red'},
             // color: 'red',
             encoding: {
-            x: {field: 'DateD', type: 'temporal'},
-            y: {field: 'Position', type: 'quantitative'},
+            x: {field: 'DateD', type: 'temporal', title: "Year"},
+            y: {field: 'Position', type: 'quantitative', title: "Rank/Position"},
             tooltip: [{field: 'Position', type: 'quantitative'},
                       {field: 'Year', type: 'quantitative'}
                       ]
@@ -95,8 +95,8 @@ function rank1fifa(chartid, datafifa) {
         data: {values: firstr},
         mark: 'bar',
         encoding: {
-          x: {field: 'country_full',  type: 'ordinal',sort: "-y" },
-          y: {field: 'rank', aggregate: 'sum', type: 'quantitative'},
+          x: {field: 'country_full',  type: 'ordinal',sort: "-y", title: "Country" },
+          y: {field: 'rank', aggregate: 'sum', type: 'quantitative', title: "Sum of 1st Place FIFA Rank"},
           tooltip: [{field: 'rank', aggregate: 'sum', type: 'quantitative'},
                     {field: 'country_full', type: 'ordinal'}],
           color:  {field: 'confederation', type: 'nominal'}
@@ -122,8 +122,8 @@ function wc1fifa(chartid, wcdata) {
         transform: [{filter: "datum.Year > 1993"}],
         mark: 'bar',
         encoding: {
-          x: {field: 'Team',  type: 'ordinal',sort: "-y" },
-          y: {field: 'Position', aggregate: 'sum', type: 'quantitative'},
+          x: {field: 'Team',  type: 'ordinal',sort: "-y", title:"Country" },
+          y: {field: 'Position', aggregate: 'sum', type: 'quantitative', title: "Number of WC Wins"},
           tooltip: [{field: 'Position', aggregate: 'sum', type: 'quantitative'},
                     {field: 'Team', type: 'ordinal'}],
           color:  {field: 'confederation', type: 'nominal'}
