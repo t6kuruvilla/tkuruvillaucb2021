@@ -199,43 +199,43 @@
 				<div class="step" data-step="2">
 					<p><b>Conversion Rate per Number of Penalty on Shootout</b>
 						<br><br>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-						Etiam vehicula efficitur tristique. 
-						Suspendisse non accumsan mi, non gravida erat. 
-						Interdum et malesuada fames ac ante ipsum primis in faucibus. 
-						Maecenas purus ante, vestibulum nec justo at, porta cursus mauris. 
-						Integer fermentum elementum est, nec laoreet massa vehicula eu. 
-						Vestibulum venenatis ipsum nisi, a tempor lectus laoreet sit amet. 
-						Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-						Donec convallis libero ut nisl consectetur, vitae hendrerit massa commodo. 
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Etiam vehicula efficitur tristique.
+						Suspendisse non accumsan mi, non gravida erat.
+						Interdum et malesuada fames ac ante ipsum primis in faucibus.
+						Maecenas purus ante, vestibulum nec justo at, porta cursus mauris.
+						Integer fermentum elementum est, nec laoreet massa vehicula eu.
+						Vestibulum venenatis ipsum nisi, a tempor lectus laoreet sit amet.
+						Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+						Donec convallis libero ut nisl consectetur, vitae hendrerit massa commodo.
 					</p>
 				</div>
 				<div class="step" data-step="3">
 					<p><b>Conversion Rate pero Goal Zone</b>
 						<br><br>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-						Etiam vehicula efficitur tristique. 
-						Suspendisse non accumsan mi, non gravida erat. 
-						Interdum et malesuada fames ac ante ipsum primis in faucibus. 
-						Maecenas purus ante, vestibulum nec justo at, porta cursus mauris. 
-						Integer fermentum elementum est, nec laoreet massa vehicula eu. 
-						Vestibulum venenatis ipsum nisi, a tempor lectus laoreet sit amet. 
-						Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-						Donec convallis libero ut nisl consectetur, vitae hendrerit massa commodo. 
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Etiam vehicula efficitur tristique.
+						Suspendisse non accumsan mi, non gravida erat.
+						Interdum et malesuada fames ac ante ipsum primis in faucibus.
+						Maecenas purus ante, vestibulum nec justo at, porta cursus mauris.
+						Integer fermentum elementum est, nec laoreet massa vehicula eu.
+						Vestibulum venenatis ipsum nisi, a tempor lectus laoreet sit amet.
+						Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+						Donec convallis libero ut nisl consectetur, vitae hendrerit massa commodo.
 					</p>
 				</div>
 				<div class="step" data-step="4">
 					<p><b>Closing Statements</b>
 						<br><br>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-						Etiam vehicula efficitur tristique. 
-						Suspendisse non accumsan mi, non gravida erat. 
-						Interdum et malesuada fames ac ante ipsum primis in faucibus. 
-						Maecenas purus ante, vestibulum nec justo at, porta cursus mauris. 
-						Integer fermentum elementum est, nec laoreet massa vehicula eu. 
-						Vestibulum venenatis ipsum nisi, a tempor lectus laoreet sit amet. 
-						Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-						Donec convallis libero ut nisl consectetur, vitae hendrerit massa commodo. 
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Etiam vehicula efficitur tristique.
+						Suspendisse non accumsan mi, non gravida erat.
+						Interdum et malesuada fames ac ante ipsum primis in faucibus.
+						Maecenas purus ante, vestibulum nec justo at, porta cursus mauris.
+						Integer fermentum elementum est, nec laoreet massa vehicula eu.
+						Vestibulum venenatis ipsum nisi, a tempor lectus laoreet sit amet.
+						Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+						Donec convallis libero ut nisl consectetur, vitae hendrerit massa commodo.
 					</p>
 				</div>
 			</article>
@@ -266,7 +266,7 @@
 		// generic window resize listener event
 		function handleResize() {
 			// 1. update height of step elements
-			var stepH = Math.floor(window.innerHeight * 0.75);
+			var stepH = Math.floor(window.innerHeight * 1);
 			step.style("height", stepH + "px");
 
 			var figureHeight = window.innerHeight / 2;
@@ -395,7 +395,7 @@
 
 			//Data is not getting to this point as can be witnessed by console log chart1Data
 
-			console.log(chart1Data)
+			console.log(chart2Data)
 
 			//dataB.filter(Team => countries.indexOf(countries.Team) !== -1)
 
@@ -406,26 +406,55 @@
 						width: 580,
 						height: 455,
 						title: "Elite team performance per number of penalty kick on shootout",
-						data: { values: chart1Data },
-						mark: { "type": "line", "point": { "filled": false, "fill": "white" } },
-						encoding: {
-							x: { "field": "Penalty_Number", "type": "ordinal", "sort": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"] },
-							y: { "aggregate": "mean", "field": "Goal", "type": "quantitative" },
-							color: { "field": "symbol", "type": "nominal" }
-						}
+						data: { values: chart2Data },
+						layer: [
+							{
+								mark: { "type": "line", "point": { "filled": false, "fill": "white" } },
+								encoding: {
+									x: { "field": "Penalty_Number", "type": "ordinal", "sort": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"] },
+									y: { "aggregate": "mean", "field": "Goal", "type": "quantitative" },
+									color: { "field": "symbol", "type": "nominal" }
+								}
+							},
+							{
+								mark: { "type": "line", "color": "firebrick" },
+								transform: [
+									{ regression: "Goal", "on": "Penalty_Number" }
+								],
+								encoding: {
+									x: { "field": "Penalty_Number", "type": "quantitative" },
+									y: { "field": "Goal", "type": "quantitative" }
+								}
+							}
+						]
 					},
 					{
 						width: 580,
 						height: 455,
-						title: "Non Elite team performance per number of penalty kick on shootout",
+						title: "Elite team performance per number of penalty kick on shootout",
 						data: { values: chart2Data },
-						mark: { "type": "line", "point": { "filled": false, "fill": "white" } },
-						encoding: {
-							x: { "field": "Penalty_Number", "type": "ordinal", "sort": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"] },
-							y: { "aggregate": "mean", "field": "Goal", "type": "quantitative" },
-							color: { "field": "symbol", "type": "nominal" }
-						}
-					}
+						layer: [
+							{
+								mark: { "type": "line", "point": { "filled": false, "fill": "white" } },
+								encoding: {
+									x: { "field": "Penalty_Number", "type": "ordinal", "sort": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"] },
+									y: { "aggregate": "mean", "field": "Goal", "type": "quantitative" },
+									color: { "field": "symbol", "type": "nominal" }
+								}
+							},
+							{
+								mark: { "type": "line", "color": "firebrick" },
+								transform: [
+									{ regression: "Goal", "on": "Penalty_Number" }
+								],
+								encoding: {
+									x: { "field": "Penalty_Number", "type": "quantitative" },
+									y: { "field": "Goal", "type": "quantitative" }
+								}
+							}
+						]
+					},
+
 				]
 			}
 
