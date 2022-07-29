@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Scrollama: Sticky Side Example</title>
+	<title>The Penalty Shootout Corner</title>
 	<meta name="description" content="Scrollama: Sticky Side Example" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
@@ -13,6 +13,7 @@
 	<script src="https://unpkg.com/papaparse@5.3.2/papaparse.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.8/d3.min.js" type="text/JavaScript"></script>
 	<script src="./penaltyNumber.js"></script>
+	<script src="./dataZone.js"></script>
 
 	<style media="screen">
 		/* Add space between Vega-Embed links  */
@@ -348,36 +349,72 @@
 
 		function chart1(countries) {
 			console.log(countries)
+
 			return {
+
 				$schema: 'https://vega.github.io/schema/vega-lite/v5.json',
-				width: 600,
-				height: 455,
-				data: {
-					values: [
-						{ a: 'C', b: 8 },
-						{ a: 'C', b: 3 },
-						{ a: 'C', b: 4 },
-						{ a: 'D', b: 7 },
-						{ a: 'D', b: 3 },
-						{ a: 'D', b: 9 },
-						{ a: 'E', b: 5 },
-						{ a: 'E', b: 2 },
-						{ a: 'E', b: 9 }
-					]
-				},
-				mark: 'bar',
-				encoding: {
-					y: { field: 'a', type: 'nominal' },
-					x: {
-						aggregate: 'average',
-						field: 'b',
-						type: 'quantitative',
-						axis: {
-							title: 'Average of b'
+				hconcat: [
+					{
+						width: 600,
+						height: 455,
+						data: {
+							values: [
+								{ a: 'C', b: 8 },
+								{ a: 'C', b: 3 },
+								{ a: 'C', b: 4 },
+								{ a: 'D', b: 7 },
+								{ a: 'D', b: 3 },
+								{ a: 'D', b: 9 },
+								{ a: 'E', b: 5 },
+								{ a: 'E', b: 2 },
+								{ a: 'E', b: 9 }
+							]
+						},
+						mark: 'bar',
+						encoding: {
+							y: { field: 'a', type: 'nominal' },
+							x: {
+								aggregate: 'average',
+								field: 'b',
+								type: 'quantitative',
+								axis: {
+									title: 'Average of b'
+								}
+							}
 						}
-					}
-				}
-			};
+					},
+					{
+						width: 600,
+						height: 455,
+						data: {
+							values: [
+								{ a: 'C', b: 8 },
+								{ a: 'C', b: 3 },
+								{ a: 'C', b: 4 },
+								{ a: 'D', b: 7 },
+								{ a: 'D', b: 3 },
+								{ a: 'D', b: 9 },
+								{ a: 'E', b: 5 },
+								{ a: 'E', b: 2 },
+								{ a: 'E', b: 9 }
+							]
+						},
+						mark: 'bar',
+						encoding: {
+							y: { field: 'a', type: 'nominal' },
+							x: {
+								aggregate: 'average',
+								field: 'b',
+								type: 'quantitative',
+								axis: {
+									title: 'Average of b'
+								}
+							}
+						}
+					},
+
+				]
+			}
 		}
 
 		function chart2(countries) {
@@ -461,38 +498,42 @@
 		}
 
 		function chart3(countries) {
-			console.log(countries)
+
+			console.log(dataZone)
+
 			return {
+
 				$schema: 'https://vega.github.io/schema/vega-lite/v5.json',
-				width: 600,
-				height: 455,
-				data: {
-					values: [
-						{ a: 'C', b: 8 },
-						{ a: 'C', b: 3 },
-						{ a: 'C', b: 4 },
-						{ a: 'D', b: 7 },
-						{ a: 'D', b: 3 },
-						{ a: 'D', b: 9 },
-						{ a: 'E', b: 5 },
-						{ a: 'E', b: 2 },
-						{ a: 'E', b: 9 }
-					]
-				},
-				mark: 'bar',
-				encoding: {
-					y: { field: 'a', type: 'nominal' },
-					x: {
-						aggregate: 'average',
-						field: 'b',
-						type: 'quantitative',
-						axis: {
-							title: 'Average of b'
+				hconcat: [
+					{
+						height: 455,
+						width: 580,
+						data: { values: dataZone },
+						mark: "rect",
+						encoding: {
+							y: { "field": "Y", "type": "quantitative", "title": "" },
+							x: { "field": "X", "type": "quantitative", "title": "" },
+							color: { "aggregate": "mean", "field": "Goal" }
+
 						}
-					}
-				}
-			};
-		}
+					},
+					{
+						height: 455,
+						width: 580,
+						data: { values: dataZone },
+						mark: "rect",
+						encoding: {
+							y: { "field": "Y", "type": "quantitative", "title": "" },
+							x: { "field": "X", "type": "quantitative", "title": "" },
+							color: { "aggregate": "mean", "field": "Goal" }
+
+						}
+					},
+
+				]
+			}
+		};
+
 
 		function chart4(countries) {
 			console.log(countries)
