@@ -38,11 +38,15 @@ function initdropmenu(){
 // PRESENT CONFEDERATION PERFORMANCE FOR A GIVEN YEAR AND METRIC
   function confgraph(chartid, year, metric, datawc){
 
+    console.log("IN CONF PER FOR GIVEN YEAR AND METRIC")
+    console.log(year)
+    console.log(datawc)
+
     // chartid = '#chart'; datawc= wcdata
     var spec = {
         $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
         title: "Average "+metric+" per Confederation - "+year,
-        data: {values: datawc},
+        data: {values: datawc},  
         transform: [{filter: "datum.Year == "+year}],
         // width: 400,
         mark: 'bar',
