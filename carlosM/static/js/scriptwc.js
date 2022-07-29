@@ -201,7 +201,7 @@ function initdropmenu(){
 function updatetext() {
 
     countrywc = wclist[year]
-    countywon = wcwinners[year]
+    countywon = wcwon[year]
 
     countrywc2 = wclist[yearY1]
     countywon2 = wcwinners[yearY1]
