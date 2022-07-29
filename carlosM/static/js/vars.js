@@ -5,7 +5,7 @@ var wclist = {1930: "Uruguay", 1934: "Italy", 1938: "France", 1950:"Brazil", 195
               2014: "Brazil", 2018: "Russia"  
             }
 
-var wcwinners = {1930: "Uruguay", 1934: "Italy", 1938: "Italy", 1950:"Uruguay", 1954:"Germany",
+var wcwon = {1930: "Uruguay", 1934: "Italy", 1938: "Italy", 1950:"Uruguay", 1954:"Germany",
                  1958: "Brazil", 1962: "Brazil", 1966: "England", 1970: "Brazil", 1974: "Germany",
                  1978: "Argentina", 1982: "Italy", 1986: "Argentina", 1990: "Germany", 1994: "Brazil",
                  1998: "France", 2002: "Brazil", 2006: "Italy", 2010: "Spain",
