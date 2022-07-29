@@ -12,6 +12,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
 	<script src="https://unpkg.com/papaparse@5.3.2/papaparse.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.8/d3.min.js" type="text/JavaScript"></script>
+	<script src="./penaltyNumber.js"></script>
 
 	<style media="screen">
 		/* Add space between Vega-Embed links  */
@@ -183,7 +184,7 @@
 		<section id="scrolly">
 			<article>
 				<div class="step" data-step="1">
-					<p><b>Welcome to the Penalty Kick Corner</b>
+					<p><b>Conversion Rate</b>
 						<br><br>
 						In 2012, The Economist wrote an articled titled "Penalty shoot-outs are basically still
 						crap-shoots".
@@ -196,13 +197,46 @@
 					</p>
 				</div>
 				<div class="step" data-step="2">
-					<p>STEP 2</p>
+					<p><b>Conversion Rate per Number of Penalty on Shootout</b>
+						<br><br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Etiam vehicula efficitur tristique. 
+						Suspendisse non accumsan mi, non gravida erat. 
+						Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+						Maecenas purus ante, vestibulum nec justo at, porta cursus mauris. 
+						Integer fermentum elementum est, nec laoreet massa vehicula eu. 
+						Vestibulum venenatis ipsum nisi, a tempor lectus laoreet sit amet. 
+						Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+						Donec convallis libero ut nisl consectetur, vitae hendrerit massa commodo. 
+					</p>
 				</div>
 				<div class="step" data-step="3">
-					<p>STEP 3</p>
+					<p><b>Conversion Rate pero Goal Zone</b>
+						<br><br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Etiam vehicula efficitur tristique. 
+						Suspendisse non accumsan mi, non gravida erat. 
+						Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+						Maecenas purus ante, vestibulum nec justo at, porta cursus mauris. 
+						Integer fermentum elementum est, nec laoreet massa vehicula eu. 
+						Vestibulum venenatis ipsum nisi, a tempor lectus laoreet sit amet. 
+						Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+						Donec convallis libero ut nisl consectetur, vitae hendrerit massa commodo. 
+					</p>
 				</div>
 				<div class="step" data-step="4">
-					<p>STEP 4</p>
+					<p><b>Closing Statements</b>
+						<br><br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Etiam vehicula efficitur tristique. 
+						Suspendisse non accumsan mi, non gravida erat. 
+						Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+						Maecenas purus ante, vestibulum nec justo at, porta cursus mauris. 
+						Integer fermentum elementum est, nec laoreet massa vehicula eu. 
+						Vestibulum venenatis ipsum nisi, a tempor lectus laoreet sit amet. 
+						Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+						Donec convallis libero ut nisl consectetur, vitae hendrerit massa commodo. 
+					</p>
 				</div>
 			</article>
 
@@ -291,6 +325,8 @@
 					return vegaEmbed('#vis', chart3(countries));
 				case 4:
 					return vegaEmbed('#vis', chart4(countries));
+				case 5:
+					return vegaEmbed('#vis', chart5(countries));
 			}
 		}
 
@@ -307,53 +343,15 @@
 
 			}
 
-			console.log(selected_countries)
-
 			return (selected_countries)
 		}
 
 		function chart1(countries) {
-
-			//console.log(dataB.filter(Team => countries.indexOf(countries.Team) !== -1))
-
-			//dataB.filter(Team => countries.indexOf(countries.Team) !== -1)
-
-			return {
-				$schema: 'https://vega.github.io/schema/vega-lite/v5.json',
-				hconcat: [
-					{
-						width: 580,
-						height: 470,
-						data: { "url": "../penaltyNumber.csv" },
-						mark: { "type": "line", "point": { "filled": false, "fill": "white" } },
-						encoding: {
-							x: { "field": "PenaltyNumber" },
-							y: { "aggregate": "mean", "field": "Goal", "type": "quantitative" },
-							color: { "field": "symbol", "type": "nominal" }
-						}
-					},
-					{
-						width: 580,
-						height: 470,
-						data: { "url": "../penaltyNumber.csv" },
-						mark: { "type": "line", "point": { "filled": false, "fill": "white" } },
-						encoding: {
-							x: { "field": "PenaltyNumber" },
-							y: { "aggregate": "mean", "field": "Goal", "type": "quantitative" },
-							color: { "field": "symbol", "type": "nominal" }
-						}
-					}
-				]
-			}
-
-		}
-
-		function chart2(countries) {
 			console.log(countries)
 			return {
 				$schema: 'https://vega.github.io/schema/vega-lite/v5.json',
-				"width": 600,
-				"height": 455,
+				width: 600,
+				height: 455,
 				data: {
 					values: [
 						{ a: 'C', b: 8 },
@@ -382,12 +380,86 @@
 			};
 		}
 
+		function chart2(countries) {
+
+			const chart1Data = penaltyData.filter(Team => countries.indexOf(countries.Team) !== -1)
+
+			console.log(penaltyData)
+
+			//dataB.filter(Team => countries.indexOf(countries.Team) !== -1)
+
+			return {
+				$schema: 'https://vega.github.io/schema/vega-lite/v5.json',
+				hconcat: [
+					{
+						width: 580,
+						height: 455,
+						title: "Elite team performance per number of penalty kick on shootout",
+						data: { values: penaltyData },
+						mark: { "type": "line", "point": { "filled": false, "fill": "white" } },
+						encoding: {
+							x: { "field": "Penalty_Number", "type": "ordinal", "sort": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"] },
+							y: { "aggregate": "mean", "field": "Goal", "type": "quantitative" },
+							color: { "field": "symbol", "type": "nominal" }
+						}
+					},
+					{
+						width: 580,
+						height: 455,
+						title: "Non Elite team performance per number of penalty kick on shootout",
+						data: { values: penaltyData },
+						mark: { "type": "line", "point": { "filled": false, "fill": "white" } },
+						encoding: {
+							x: { "field": "Penalty_Number", "type": "ordinal", "sort": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"] },
+							y: { "aggregate": "mean", "field": "Goal", "type": "quantitative" },
+							color: { "field": "symbol", "type": "nominal" }
+						}
+					}
+				]
+			}
+
+		}
+
 		function chart3(countries) {
 			console.log(countries)
 			return {
 				$schema: 'https://vega.github.io/schema/vega-lite/v5.json',
-				"width": 600,
-				"height": 455,
+				width: 600,
+				height: 455,
+				data: {
+					values: [
+						{ a: 'C', b: 8 },
+						{ a: 'C', b: 3 },
+						{ a: 'C', b: 4 },
+						{ a: 'D', b: 7 },
+						{ a: 'D', b: 3 },
+						{ a: 'D', b: 9 },
+						{ a: 'E', b: 5 },
+						{ a: 'E', b: 2 },
+						{ a: 'E', b: 9 }
+					]
+				},
+				mark: 'bar',
+				encoding: {
+					y: { field: 'a', type: 'nominal' },
+					x: {
+						aggregate: 'average',
+						field: 'b',
+						type: 'quantitative',
+						axis: {
+							title: 'Average of b'
+						}
+					}
+				}
+			};
+		}
+
+		function chart4(countries) {
+			console.log(countries)
+			return {
+				$schema: 'https://vega.github.io/schema/vega-lite/v5.json',
+				width: 600,
+				height: 455,
 				data: {
 					values: [
 						{ a: 'C', b: 5 },
@@ -416,7 +488,7 @@
 			};
 		}
 
-		function chart4(countries) {
+		function chart5(countries) {
 			console.log(countries)
 			return {
 				$schema: 'https://vega.github.io/schema/vega-lite/v5.json',
