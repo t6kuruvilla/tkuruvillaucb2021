@@ -93,6 +93,16 @@
 </head>
 
 <body>
+
+	<!-- Navbar (sit on top) -->
+	<div class="w3-top">
+		<div class="w3-bar w3-white w3-card" id="myNavbar">
+			<a href="https://t6kuruvilla.github.io/tkuruvillaucb2021/index"
+				class="w3-bar-item w3-button w3-wide">HOME</a>
+			</a>
+		</div>
+	</div>
+
 	<main>
 		<section id="intro">
 			<h1 class="intro__hed">The Penalty Shootout Corner</h1>
@@ -312,24 +322,24 @@
 				$schema: 'https://vega.github.io/schema/vega-lite/v5.json',
 				hconcat: [
 					{
-						width:620,
-						height:470,
+						width: 580,
+						height: 470,
 						data: { "url": "../penaltyNumber.csv" },
 						mark: { "type": "line", "point": { "filled": false, "fill": "white" } },
 						encoding: {
 							x: { "field": "PenaltyNumber" },
-							y: {"aggregate": "mean", "field": "Goal", "type": "quantitative" },
+							y: { "aggregate": "mean", "field": "Goal", "type": "quantitative" },
 							color: { "field": "symbol", "type": "nominal" }
 						}
 					},
 					{
-						width:620,
-						height:470,
+						width: 580,
+						height: 470,
 						data: { "url": "../penaltyNumber.csv" },
 						mark: { "type": "line", "point": { "filled": false, "fill": "white" } },
 						encoding: {
 							x: { "field": "PenaltyNumber" },
-							y: {"aggregate": "mean", "field": "Goal", "type": "quantitative" },
+							y: { "aggregate": "mean", "field": "Goal", "type": "quantitative" },
 							color: { "field": "symbol", "type": "nominal" }
 						}
 					}
