@@ -201,15 +201,27 @@
 				<div class="step" data-step="2">
 					<p><b>Conversion Rate per Number of Penalty on Shootout</b>
 						<br><br>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Etiam vehicula efficitur tristique.
-						Suspendisse non accumsan mi, non gravida erat.
-						Interdum et malesuada fames ac ante ipsum primis in faucibus.
-						Maecenas purus ante, vestibulum nec justo at, porta cursus mauris.
-						Integer fermentum elementum est, nec laoreet massa vehicula eu.
-						Vestibulum venenatis ipsum nisi, a tempor lectus laoreet sit amet.
-						Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-						Donec convallis libero ut nisl consectetur, vitae hendrerit massa commodo.
+						Let's look at the conversion rate of ELITE team's vs NON ELITE TEAMS based on the number of
+						penalties on a penalty shootout.
+						<br><br>
+						In a world in which penalty shootouts are driven by chance, we should not be able to see a
+						difference in performance across both groups.
+						<br><br>
+						One thing to keep on mind here is that the first penalty kick of a shootout is normally taken by
+						the best player on the team.
+						This is done to maximize conversion potential and keep morale high across the shootout.
+						<br><br>
+						Take a look at the performance of your selected teams in the initial penalty kicks.
+						Also, take a look at how the performance evolves as the penalty shootout advances.
+						<br><br>
+						Do you think that there is enough evidence to suggest that your elite teams are performing
+						better overall?
+						<br><br>
+						How about in the first penalty kick?
+						<br><br>
+						In the initial group of penalty kicks? How about the last penalty kicks in the shootout?
+						<br><br>
+						What does the data you're observing tell you about the performance of ELITE vs NON ELITE teams?
 					</p>
 				</div>
 				<div class="step" data-step="3">
@@ -418,14 +430,35 @@
 					{
 						width: 550,
 						height: 402,
-						title: "Elite team performance per number of penalty kick on shootout",
+						title: "Elite team conversion rate per number of penalty kick on shootout",
 						data: { values: chart2aData },
 						layer: [
 							{
-								mark: { "type": "line", "point": { "filled": false, "fill": "white" } },
+								mark: {
+									type: "line",
+									"line": { "color": "white" },
+									"point": {
+										"filled": false,
+										"fill": "white",
+										"tooltip": { "content": "data" },
+										"format": ".2f"
+									},
+								},
 								encoding: {
-									x: { "field": "Penalty_Number", "type": "ordinal", "sort": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"] },
-									y: { "aggregate": "mean", "field": "Goal", "type": "quantitative" },
+									x: {
+										"field": "Penalty_Number",
+										"type": "quantitative",
+										"axis": { "values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] },
+										"title": "Number of Penalty on Shootout"
+									},
+									y: {
+										"aggregate": "mean",
+										"field": "Goal",
+										"type": "quantitative",
+										"scale": { "domain": [0, 1] },
+										"title": "Conversion Rate (penalties scored / total penalties taken)"
+									},
+									legend: null,
 									color: { "field": "symbol", "type": "nominal" }
 								}
 							},
@@ -435,8 +468,17 @@
 									{ regression: "Goal", "on": "Penalty_Number" }
 								],
 								encoding: {
-									x: { "field": "Penalty_Number", "type": "quantitative" },
-									y: { "field": "Goal", "type": "quantitative" }
+									x: {
+										"field": "Penalty_Number",
+										"type": "quantitative",
+										"axis": { "values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] }
+									},
+									y: {
+										"field": "Goal",
+										"type": "quantitative",
+										"scale": { "domain": [0, 1] }
+									},
+									legend: null,
 								}
 							}
 						]
@@ -444,14 +486,35 @@
 					{
 						width: 550,
 						height: 402,
-						title: "Elite team performance per number of penalty kick on shootout",
+						title: "Non Elite team conversion rate per number of penalty kick on shootout",
 						data: { values: chart2bData },
 						layer: [
 							{
-								mark: { "type": "line", "point": { "filled": false, "fill": "white" } },
+								mark: {
+									type: "line",
+									"line": { "color": "white" },
+									"point": {
+										"filled": false,
+										"fill": "white",
+										"tooltip": { "content": "data" },
+										"format": ".2f"
+									},
+								},
 								encoding: {
-									x: { "field": "Penalty_Number", "type": "ordinal", "sort": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"] },
-									y: { "aggregate": "mean", "field": "Goal", "type": "quantitative" },
+									x: {
+										"field": "Penalty_Number",
+										"type": "quantitative",
+										"axis": { "values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] },
+										"title": "Number of Penalty on Shootout"
+									},
+									y: {
+										"aggregate": "mean",
+										"field": "Goal",
+										"type": "quantitative",
+										"scale": { "domain": [0, 1] },
+										"title": "Conversion Rate (penalties scored / total penalties taken)"
+									},
+									legend: null,
 									color: { "field": "symbol", "type": "nominal" }
 								}
 							},
@@ -461,8 +524,17 @@
 									{ regression: "Goal", "on": "Penalty_Number" }
 								],
 								encoding: {
-									x: { "field": "Penalty_Number", "type": "quantitative" },
-									y: { "field": "Goal", "type": "quantitative" }
+									x: {
+										"field": "Penalty_Number",
+										"type": "quantitative",
+										"axis": { "values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] }
+									},
+									y: {
+										"field": "Goal",
+										"type": "quantitative",
+										"scale": { "domain": [0, 1] }
+									},
+									legend: null,
 								}
 							}
 						]
@@ -488,7 +560,10 @@
 						width: 550,
 						height: 465,
 						data: { values: chart3aData },
-						mark: "rect",
+						mark: {
+							type: "rect",
+							"tooltip": { "content": "data" },
+						},
 						encoding: {
 							y: { "field": "Y", "type": "quantitative", "title": "" },
 							x: { "field": "X", "type": "quantitative", "title": "" },
@@ -503,7 +578,10 @@
 						width: 550,
 						height: 465,
 						data: { values: chart3bData },
-						mark: "rect",
+						mark: {
+							type: "rect",
+							"tooltip": { "content": "data" },
+						},
 						encoding: {
 							y: { "field": "Y", "type": "quantitative", "title": "" },
 							x: { "field": "X", "type": "quantitative", "title": "" },
