@@ -1,0 +1,458 @@
+,Position,Team,Games Played,Win,Draw,Loss,Goals For,Goals Against,Goal Difference,Points,Year,DateD,country_full,country_abrv,confederation,_merge
+0,1,Uruguay,4,3,1,0,15,5,10,7,1950,1950-07-01,Uruguay,URU,CONMEBOL,both
+1,16,Uruguay,4,0,2,2,2,8,−6,2,1986,1986-07-01,Uruguay,URU,CONMEBOL,both
+2,16,Uruguay,4,1,1,2,2,5,−3,3,1990,1990-07-01,Uruguay,URU,CONMEBOL,both
+3,4,Uruguay,5,3,0,2,16,9,7,6,1954,1954-07-01,Uruguay,URU,CONMEBOL,both
+4,1,Uruguay,4,4,0,0,15,3,12,8,1930,1930-07-01,Uruguay,URU,CONMEBOL,both
+5,5,Uruguay,5,4,0,1,7,3,4,12,2018,2018-07-01,Uruguay,URU,CONMEBOL,both
+6,26,Uruguay,3,0,2,1,4,5,−1,2,2002,2002-07-01,Uruguay,URU,CONMEBOL,both
+7,12,Uruguay,4,2,0,2,4,6,−2,6,2014,2014-07-01,Uruguay,URU,CONMEBOL,both
+8,4,Uruguay,7,3,2,2,11,8,3,11,2010,2010-07-01,Uruguay,URU,CONMEBOL,both
+9,4,Uruguay,6,2,1,3,4,5,−1,5,1970,1970-07-01,Uruguay,URU,CONMEBOL,both
+10,7,Uruguay,4,1,2,1,2,5,−3,4,1966,1966-07-01,Uruguay,URU,CONMEBOL,both
+11,13,Uruguay,3,1,0,2,4,6,−2,2,1962,1962-07-01,Uruguay,URU,CONMEBOL,both
+12,13,Uruguay,3,0,1,2,1,6,−5,1,1974,1974-07-01,Uruguay,URU,CONMEBOL,both
+13,2,Brazil,6,4,1,1,22,6,16,9,1950,1950-07-01,Brazil,BRA,CONMEBOL,both
+14,3,Brazil,7,4,3,0,10,3,7,11,1978,1978-07-01,Brazil,BRA,CONMEBOL,both
+15,5,Brazil,5,4,1,0,10,1,9,9,1986,1986-07-01,Brazil,BRA,CONMEBOL,both
+16,9,Brazil,4,3,0,1,4,2,2,6,1990,1990-07-01,Brazil,BRA,CONMEBOL,both
+17,1,Brazil,7,5,2,0,11,3,8,17,1994,1994-07-01,Brazil,BRA,CONMEBOL,both
+18,5,Brazil,5,4,0,1,15,6,9,8,1982,1982-07-01,Brazil,BRA,CONMEBOL,both
+19,6,Brazil,3,1,1,1,8,5,3,3,1954,1954-07-01,Brazil,BRA,CONMEBOL,both
+20,6,Brazil,2,1,0,1,5,2,3,2,1930,1930-07-01,Brazil,BRA,CONMEBOL,both
+21,6,Brazil,5,3,1,1,8,3,5,10,2018,2018-07-01,Brazil,BRA,CONMEBOL,both
+22,14,Brazil,1,0,0,1,1,3,−2,0,1934,1934-07-01,Brazil,BRA,CONMEBOL,both
+23,1,Brazil,7,7,0,0,18,4,14,21,2002,2002-07-01,Brazil,BRA,CONMEBOL,both
+24,4,Brazil,7,3,2,2,11,14,−3,11,2014,2014-07-01,Brazil,BRA,CONMEBOL,both
+25,3,Brazil,5,3,1,1,14,11,3,7,1938,1938-07-01,Brazil,BRA,CONMEBOL,both
+26,6,Brazil,5,3,1,1,9,4,5,10,2010,2010-07-01,Brazil,BRA,CONMEBOL,both
+27,5,Brazil,5,4,0,1,10,2,8,12,2006,2006-07-01,Brazil,BRA,CONMEBOL,both
+28,1,Brazil,6,5,1,0,16,4,12,11,1958,1958-07-01,Brazil,BRA,CONMEBOL,both
+29,1,Brazil,6,6,0,0,19,7,12,12,1970,1970-07-01,Brazil,BRA,CONMEBOL,both
+30,11,Brazil,3,1,0,2,4,6,−2,2,1966,1966-07-01,Brazil,BRA,CONMEBOL,both
+31,2,Brazil,7,4,1,2,14,10,4,13,1998,1998-07-01,Brazil,BRA,CONMEBOL,both
+32,1,Brazil,6,5,1,0,14,5,9,11,1962,1962-07-01,Brazil,BRA,CONMEBOL,both
+33,4,Brazil,7,3,2,2,6,4,2,8,1974,1974-07-01,Brazil,BRA,CONMEBOL,both
+34,3,Sweden,5,2,1,2,11,15,−4,5,1950,1950-07-01,Sweden,SWE,UEFA,both
+35,13,Sweden,3,0,1,2,1,3,−2,1,1978,1978-07-01,Sweden,SWE,UEFA,both
+36,21,Sweden,3,0,0,3,3,6,−3,0,1990,1990-07-01,Sweden,SWE,UEFA,both
+37,3,Sweden,7,3,3,1,15,8,7,12,1994,1994-07-01,Sweden,SWE,UEFA,both
+38,7,Sweden,5,3,0,2,6,4,2,9,2018,2018-07-01,Sweden,SWE,UEFA,both
+39,8,Sweden,2,1,0,1,4,4,0,2,1934,1934-07-01,Sweden,SWE,UEFA,both
+40,13,Sweden,4,1,2,1,5,5,0,5,2002,2002-07-01,Sweden,SWE,UEFA,both
+41,4,Sweden,3,1,0,2,11,9,2,2,1938,1938-07-01,Sweden,SWE,UEFA,both
+42,14,Sweden,4,1,2,1,3,4,−1,5,2006,2006-07-01,Sweden,SWE,UEFA,both
+43,2,Sweden,6,4,1,1,12,7,5,9,1958,1958-07-01,Sweden,SWE,UEFA,both
+44,9,Sweden,3,1,1,1,2,2,0,3,1970,1970-07-01,Sweden,SWE,UEFA,both
+45,5,Sweden,6,2,2,2,7,6,1,6,1974,1974-07-01,Sweden,SWE,UEFA,both
+46,4,Spain,6,3,1,2,10,12,−2,7,1950,1950-07-01,Spain,ESP,UEFA,both
+47,10,Spain,3,1,1,1,2,2,0,3,1978,1978-07-01,Spain,ESP,UEFA,both
+48,7,Spain,5,3,1,1,11,4,7,7,1986,1986-07-01,Spain,ESP,UEFA,both
+49,10,Spain,4,2,1,1,6,4,2,5,1990,1990-07-01,Spain,ESP,UEFA,both
+50,8,Spain,5,2,2,1,10,6,4,8,1994,1994-07-01,Spain,ESP,UEFA,both
+51,12,Spain,5,1,2,2,4,5,−1,4,1982,1982-07-01,Spain,ESP,UEFA,both
+52,12,Spain,4,1,3,0,7,6,1,6,2018,2018-07-01,Spain,ESP,UEFA,both
+53,5,Spain,2,1,1,0,4,2,2,3,1934,1934-07-01,Spain,ESP,UEFA,both
+54,5,Spain,5,3,2,0,10,5,5,11,2002,2002-07-01,Spain,ESP,UEFA,both
+55,23,Spain,3,1,0,2,4,7,−3,3,2014,2014-07-01,Spain,ESP,UEFA,both
+56,1,Spain,7,6,0,1,8,2,6,18,2010,2010-07-01,Spain,ESP,UEFA,both
+57,9,Spain,4,3,0,1,9,4,5,9,2006,2006-07-01,Spain,ESP,UEFA,both
+58,10,Spain,3,1,0,2,4,5,−1,2,1966,1966-07-01,Spain,ESP,UEFA,both
+59,17,Spain,3,1,1,1,8,4,4,4,1998,1998-07-01,Spain,ESP,UEFA,both
+60,12,Spain,3,1,0,2,2,3,−1,2,1962,1962-07-01,Spain,ESP,UEFA,both
+61,5,Yugoslavia,3,2,0,1,7,3,4,4,1950,1950-07-01,Yugoslavia,YUG,UEFA,both
+62,5,Yugoslavia,5,3,1,1,8,6,2,7,1990,1990-07-01,Yugoslavia,YUG,UEFA,both
+63,16,Yugoslavia,3,1,1,1,2,2,0,3,1982,1982-07-01,Yugoslavia,YUG,UEFA,both
+64,8,Yugoslavia,3,1,1,1,2,3,−1,3,1954,1954-07-01,Yugoslavia,YUG,UEFA,both
+65,4,Yugoslavia,3,2,0,1,7,7,0,4,1930,1930-07-01,Yugoslavia,YUG,UEFA,both
+66,8,Yugoslavia,4,1,2,1,7,7,0,4,1958,1958-07-01,Yugoslavia,YUG,UEFA,both
+67,10,FR Yugoslavia,4,2,1,1,5,4,1,7,1998,1998-07-01,Yugoslavia,YUG,UEFA,both
+68,4,Yugoslavia,6,3,0,3,10,7,3,6,1962,1962-07-01,Yugoslavia,YUG,UEFA,both
+69,7,Yugoslavia,6,1,2,3,12,7,5,4,1974,1974-07-01,Yugoslavia,YUG,UEFA,both
+70,6,Switzerland,3,1,1,1,4,6,−2,3,1950,1950-07-01,Switzerland,SUI,UEFA,both
+71,15,Switzerland,4,1,1,2,5,7,−2,4,1994,1994-07-01,Switzerland,SUI,UEFA,both
+72,5,Switzerland,4,2,0,2,11,11,0,4,1954,1954-07-01,Switzerland,SUI,UEFA,both
+73,14,Switzerland,4,1,2,1,5,5,0,5,2018,2018-07-01,Switzerland,SUI,UEFA,both
+74,7,Switzerland,2,1,0,1,5,5,0,2,1934,1934-07-01,Switzerland,SUI,UEFA,both
+75,11,Switzerland,4,2,0,2,7,7,0,6,2014,2014-07-01,Switzerland,SUI,UEFA,both
+76,6,Switzerland,3,1,1,1,5,5,0,3,1938,1938-07-01,Switzerland,SUI,UEFA,both
+77,19,Switzerland,3,1,1,1,1,1,0,4,2010,2010-07-01,Switzerland,SUI,UEFA,both
+78,10,Switzerland,4,2,2,0,4,0,4,8,2006,2006-07-01,Switzerland,SUI,UEFA,both
+79,16,Switzerland,3,0,0,3,1,9,−8,0,1966,1966-07-01,Switzerland,SUI,UEFA,both
+80,16,Switzerland,3,0,0,3,2,8,−6,0,1962,1962-07-01,Switzerland,SUI,UEFA,both
+81,7,Italy,2,1,0,1,4,3,1,2,1950,1950-07-01,Italy,ITA,UEFA,both
+82,4,Italy,7,4,1,2,9,6,3,9,1978,1978-07-01,Italy,ITA,UEFA,both
+83,12,Italy,4,1,2,1,5,6,−1,4,1986,1986-07-01,Italy,ITA,UEFA,both
+84,3,Italy,7,6,1,0,10,2,8,13,1990,1990-07-01,Italy,ITA,UEFA,both
+85,2,Italy,7,4,2,1,8,5,3,14,1994,1994-07-01,Italy,ITA,UEFA,both
+86,1,Italy,7,4,3,0,12,6,6,11,1982,1982-07-01,Italy,ITA,UEFA,both
+87,10,Italy,3,1,0,2,6,7,−1,2,1954,1954-07-01,Italy,ITA,UEFA,both
+88,1,Italy,4,3,1,0,11,3,8,7,1934,1934-07-01,Italy,ITA,UEFA,both
+89,15,Italy,4,1,1,2,5,5,0,4,2002,2002-07-01,Italy,ITA,UEFA,both
+90,22,Italy,3,1,0,2,2,3,−1,3,2014,2014-07-01,Italy,ITA,UEFA,both
+91,1,Italy,4,4,0,0,11,5,6,8,1938,1938-07-01,Italy,ITA,UEFA,both
+92,26,Italy,3,0,2,1,4,5,−1,2,2010,2010-07-01,Italy,ITA,UEFA,both
+93,1,Italy,7,5,2,0,12,2,10,17,2006,2006-07-01,Italy,ITA,UEFA,both
+94,2,Italy,6,3,2,1,10,8,2,8,1970,1970-07-01,Italy,ITA,UEFA,both
+95,9,Italy,3,1,0,2,2,2,0,2,1966,1966-07-01,Italy,ITA,UEFA,both
+96,5,Italy,5,3,2,0,8,3,5,11,1998,1998-07-01,Italy,ITA,UEFA,both
+97,9,Italy,3,1,1,1,3,2,1,3,1962,1962-07-01,Italy,ITA,UEFA,both
+98,10,Italy,3,1,1,1,5,4,1,3,1974,1974-07-01,Italy,ITA,UEFA,both
+99,8,England,3,1,0,2,2,2,0,2,1950,1950-07-01,England,ENG,UEFA,both
+100,8,England,5,2,1,2,7,3,4,5,1986,1986-07-01,England,ENG,UEFA,both
+101,4,England,7,3,3,1,8,6,2,9,1990,1990-07-01,England,ENG,UEFA,both
+102,6,England,5,3,2,0,6,1,5,8,1982,1982-07-01,England,ENG,UEFA,both
+103,7,England,3,1,1,1,8,8,0,3,1954,1954-07-01,England,ENG,UEFA,both
+104,4,England,7,3,1,3,12,8,4,10,2018,2018-07-01,England,ENG,UEFA,both
+105,6,England,5,2,2,1,6,3,3,8,2002,2002-07-01,England,ENG,UEFA,both
+106,26,England,3,0,1,2,2,4,−2,1,2014,2014-07-01,England,ENG,UEFA,both
+107,13,England,4,1,2,1,3,5,−2,5,2010,2010-07-01,England,ENG,UEFA,both
+108,7,England,5,3,2,0,6,2,4,11,2006,2006-07-01,England,ENG,UEFA,both
+109,11,England,4,0,3,1,4,5,−1,3,1958,1958-07-01,England,ENG,UEFA,both
+110,8,England,4,2,0,2,4,4,0,4,1970,1970-07-01,England,ENG,UEFA,both
+111,1,England,6,5,1,0,11,3,8,11,1966,1966-07-01,England,ENG,UEFA,both
+112,9,England,4,2,1,1,7,4,3,7,1998,1998-07-01,England,ENG,UEFA,both
+113,8,England,4,1,1,2,5,6,−1,3,1962,1962-07-01,England,ENG,UEFA,both
+114,9,Chile,3,1,0,2,5,6,−1,2,1950,1950-07-01,Chile,CHI,CONMEBOL,both
+115,22,Chile,3,0,0,3,3,8,−5,0,1982,1982-07-01,Chile,CHI,CONMEBOL,both
+116,5,Chile,3,2,0,1,5,3,2,4,1930,1930-07-01,Chile,CHI,CONMEBOL,both
+117,9,Chile,4,2,1,1,6,4,2,7,2014,2014-07-01,Chile,CHI,CONMEBOL,both
+118,10,Chile,4,2,0,2,3,5,−2,6,2010,2010-07-01,Chile,CHI,CONMEBOL,both
+119,13,Chile,3,0,1,2,2,5,−3,1,1966,1966-07-01,Chile,CHI,CONMEBOL,both
+120,16,Chile,4,0,3,1,5,8,−3,3,1998,1998-07-01,Chile,CHI,CONMEBOL,both
+121,3,Chile,6,4,0,2,10,8,2,8,1962,1962-07-01,Chile,CHI,CONMEBOL,both
+122,11,Chile,3,0,2,1,1,2,−1,2,1974,1974-07-01,Chile,CHI,CONMEBOL,both
+123,10,United States,3,1,0,2,4,8,−4,2,1950,1950-07-01,USA,USA,CONCACAF,both
+124,23,United States,3,0,0,3,2,8,−6,0,1990,1990-07-01,USA,USA,CONCACAF,both
+125,14,United States,4,1,1,2,3,4,−1,4,1994,1994-07-01,USA,USA,CONCACAF,both
+126,3,United States,3,2,0,1,7,6,1,4,1930,1930-07-01,USA,USA,CONCACAF,both
+127,16,United States,1,0,0,1,1,7,−6,0,1934,1934-07-01,USA,USA,CONCACAF,both
+128,8,United States,5,2,1,2,7,7,0,7,2002,2002-07-01,USA,USA,CONCACAF,both
+129,15,United States,4,1,1,2,5,6,−1,4,2014,2014-07-01,USA,USA,CONCACAF,both
+130,12,United States,4,1,2,1,5,5,0,5,2010,2010-07-01,USA,USA,CONCACAF,both
+131,25,United States,3,0,1,2,2,6,−4,1,2006,2006-07-01,USA,USA,CONCACAF,both
+132,32,United States,3,0,0,3,1,5,−4,0,1998,1998-07-01,USA,USA,CONCACAF,both
+133,11,Paraguay,2,0,1,1,2,4,−2,1,1950,1950-07-01,Paraguay,PAR,CONMEBOL,both
+134,13,Paraguay,4,1,2,1,4,6,−2,4,1986,1986-07-01,Paraguay,PAR,CONMEBOL,both
+135,9,Paraguay,2,1,0,1,1,3,−2,2,1930,1930-07-01,Paraguay,PAR,CONMEBOL,both
+136,16,Paraguay,4,1,1,2,6,7,−1,4,2002,2002-07-01,Paraguay,PAR,CONMEBOL,both
+137,8,Paraguay,5,1,3,1,3,2,1,6,2010,2010-07-01,Paraguay,PAR,CONMEBOL,both
+138,18,Paraguay,3,1,0,2,2,2,0,3,2006,2006-07-01,Paraguay,PAR,CONMEBOL,both
+139,12,Paraguay,3,1,1,1,9,12,−3,3,1958,1958-07-01,Paraguay,PAR,CONMEBOL,both
+140,14,Paraguay,4,1,2,1,3,2,1,5,1998,1998-07-01,Paraguay,PAR,CONMEBOL,both
+141,12,Mexico,3,0,0,3,2,10,−8,0,1950,1950-07-01,Mexico,MEX,CONCACAF,both
+142,16,Mexico,3,0,0,3,2,12,−10,0,1978,1978-07-01,Mexico,MEX,CONCACAF,both
+143,6,Mexico,5,3,2,0,6,2,4,8,1986,1986-07-01,Mexico,MEX,CONCACAF,both
+144,13,Mexico,4,1,2,1,4,4,0,5,1994,1994-07-01,Mexico,MEX,CONCACAF,both
+145,13,Mexico,2,0,0,2,2,8,−6,0,1954,1954-07-01,Mexico,MEX,CONCACAF,both
+146,13,Mexico,3,0,0,3,4,13,−9,0,1930,1930-07-01,Mexico,MEX,CONCACAF,both
+147,10,Mexico,4,2,0,2,3,6,−3,6,2018,2018-07-01,Mexico,MEX,CONCACAF,both
+148,11,Mexico,4,2,1,1,4,4,0,7,2002,2002-07-01,Mexico,MEX,CONCACAF,both
+149,10,Mexico,4,2,1,1,5,3,2,7,2014,2014-07-01,Mexico,MEX,CONCACAF,both
+150,14,Mexico,4,1,1,2,4,5,−1,4,2010,2010-07-01,Mexico,MEX,CONCACAF,both
+151,15,Mexico,4,1,1,2,5,5,0,4,2006,2006-07-01,Mexico,MEX,CONCACAF,both
+152,16,Mexico,3,0,1,2,1,8,−7,1,1958,1958-07-01,Mexico,MEX,CONCACAF,both
+153,6,Mexico,4,2,1,1,6,4,2,5,1970,1970-07-01,Mexico,MEX,CONCACAF,both
+154,12,Mexico,3,0,2,1,1,3,−2,2,1966,1966-07-01,Mexico,MEX,CONCACAF,both
+155,13,Mexico,4,1,2,1,8,7,1,5,1998,1998-07-01,Mexico,MEX,CONCACAF,both
+156,11,Mexico,3,1,0,2,3,4,−1,2,1962,1962-07-01,Mexico,MEX,CONCACAF,both
+157,13,Bolivia,1,0,0,1,0,8,−8,0,1950,1950-07-01,Bolivia,BOL,CONMEBOL,both
+158,21,Bolivia,3,0,1,2,1,4,−3,1,1994,1994-07-01,Bolivia,BOL,CONMEBOL,both
+159,12,Bolivia,2,0,0,2,0,8,−8,0,1930,1930-07-01,Bolivia,BOL,CONMEBOL,both
+160,1,Argentina,7,5,1,1,15,4,11,11,1978,1978-07-01,Argentina,ARG,CONMEBOL,both
+161,1,Argentina,7,6,1,0,14,5,9,13,1986,1986-07-01,Argentina,ARG,CONMEBOL,both
+162,2,Argentina,7,2,3,2,5,4,1,7,1990,1990-07-01,Argentina,ARG,CONMEBOL,both
+163,10,Argentina,4,2,0,2,8,6,2,6,1994,1994-07-01,Argentina,ARG,CONMEBOL,both
+164,11,Argentina,5,2,0,3,8,7,1,4,1982,1982-07-01,Argentina,ARG,CONMEBOL,both
+165,2,Argentina,5,4,0,1,18,9,9,8,1930,1930-07-01,Argentina,ARG,CONMEBOL,both
+166,15,Argentina,4,1,1,2,6,9,−3,4,2018,2018-07-01,Argentina,ARG,CONMEBOL,both
+167,9,Argentina,1,0,0,1,2,3,−1,0,1934,1934-07-01,Argentina,ARG,CONMEBOL,both
+168,18,Argentina,3,1,1,1,2,2,0,4,2002,2002-07-01,Argentina,ARG,CONMEBOL,both
+169,2,Argentina,7,5,1,1,8,4,4,16,2014,2014-07-01,Argentina,ARG,CONMEBOL,both
+170,5,Argentina,5,4,0,1,10,6,4,12,2010,2010-07-01,Argentina,ARG,CONMEBOL,both
+171,6,Argentina,5,3,2,0,11,3,8,11,2006,2006-07-01,Argentina,ARG,CONMEBOL,both
+172,13,Argentina,3,1,0,2,5,10,−5,2,1958,1958-07-01,Argentina,ARG,CONMEBOL,both
+173,5,Argentina,4,2,1,1,4,2,2,5,1966,1966-07-01,Argentina,ARG,CONMEBOL,both
+174,6,Argentina,5,3,1,1,10,4,6,10,1998,1998-07-01,Argentina,ARG,CONMEBOL,both
+175,10,Argentina,3,1,1,1,2,3,−1,3,1962,1962-07-01,Argentina,ARG,CONMEBOL,both
+176,8,Argentina,6,1,2,3,9,12,−3,4,1974,1974-07-01,Argentina,ARG,CONMEBOL,both
+177,2,Netherlands,7,3,2,2,15,10,5,8,1978,1978-07-01,Netherlands,NED,UEFA,both
+178,15,Netherlands,4,0,3,1,3,4,−1,3,1990,1990-07-01,Netherlands,NED,UEFA,both
+179,7,Netherlands,5,3,0,2,8,6,2,9,1994,1994-07-01,Netherlands,NED,UEFA,both
+180,9,Netherlands,1,0,0,1,2,3,−1,0,1934,1934-07-01,Netherlands,NED,UEFA,both
+181,3,Netherlands,7,5,2,0,15,4,11,17,2014,2014-07-01,Netherlands,NED,UEFA,both
+182,14,Netherlands,1,0,0,1,0,3,−3,0,1938,1938-07-01,Netherlands,NED,UEFA,both
+183,2,Netherlands,7,6,0,1,12,6,6,18,2010,2010-07-01,Netherlands,NED,UEFA,both
+184,11,Netherlands,4,2,1,1,3,2,1,7,2006,2006-07-01,Netherlands,NED,UEFA,both
+185,4,Netherlands,7,3,3,1,13,7,6,12,1998,1998-07-01,Netherlands,NED,UEFA,both
+186,2,Netherlands,7,5,1,1,15,3,12,11,1974,1974-07-01,Netherlands,NED,UEFA,both
+187,5,Poland,6,3,1,2,6,6,0,7,1978,1978-07-01,Poland,POL,UEFA,both
+188,14,Poland,4,1,1,2,1,7,−6,3,1986,1986-07-01,Poland,POL,UEFA,both
+189,3,Poland,7,3,3,1,11,5,6,9,1982,1982-07-01,Poland,POL,UEFA,both
+190,22,Poland,3,1,0,2,2,5,−3,3,2018,2018-07-01,Poland,POL,UEFA,both
+191,25,Poland,3,1,0,2,3,7,−4,3,2002,2002-07-01,Poland,POL,UEFA,both
+192,11,Poland,1,0,0,1,5,6,−1,0,1938,1938-07-01,Poland,POL,UEFA,both
+193,21,Poland,3,1,0,2,2,4,−2,3,2006,2006-07-01,Poland,POL,UEFA,both
+194,3,Poland,7,6,0,1,16,5,11,12,1974,1974-07-01,Poland,POL,UEFA,both
+195,6,West Germany,6,1,4,1,10,5,5,6,1978,1978-07-01,Germany,GER,UEFA,both
+196,2,West Germany,7,3,2,2,8,7,1,8,1986,1986-07-01,Germany,GER,UEFA,both
+197,1,West Germany,7,5,2,0,15,5,10,12,1990,1990-07-01,Germany,GER,UEFA,both
+198,5,Germany,5,3,1,1,9,7,2,10,1994,1994-07-01,Germany,GER,UEFA,both
+199,2,West Germany,7,3,2,2,12,10,2,8,1982,1982-07-01,Germany,GER,UEFA,both
+200,1,West Germany,6,5,0,1,25,14,11,10,1954,1954-07-01,Germany,GER,UEFA,both
+201,19,Germany,3,1,0,2,2,4,−2,3,2018,2018-07-01,Germany,GER,UEFA,both
+202,3,Germany,4,3,0,1,11,8,3,6,1934,1934-07-01,Germany,GER,UEFA,both
+203,2,Germany,7,5,1,1,14,3,11,16,2002,2002-07-01,Germany,GER,UEFA,both
+204,1,Germany,7,6,1,0,18,4,14,19,2014,2014-07-01,Germany,GER,UEFA,both
+205,10,Germany,2,0,1,1,3,5,-2,1,1938,1938-07-01,Germany,GER,UEFA,both
+206,3,Germany,7,5,0,2,16,5,11,15,2010,2010-07-01,Germany,GER,UEFA,both
+207,3,Germany,7,5,1,1,14,6,8,16,2006,2006-07-01,Germany,GER,UEFA,both
+208,4,West Germany,6,2,2,2,12,14,−2,6,1958,1958-07-01,Germany,GER,UEFA,both
+209,3,West Germany,6,5,0,1,17,10,7,10,1970,1970-07-01,Germany,GER,UEFA,both
+210,2,West Germany,6,4,1,1,15,6,9,9,1966,1966-07-01,Germany,GER,UEFA,both
+211,7,Germany,5,3,1,1,8,6,2,10,1998,1998-07-01,Germany,GER,UEFA,both
+212,7,West Germany,4,2,1,1,4,2,2,5,1962,1962-07-01,Germany,GER,UEFA,both
+213,1,West Germany,7,6,0,1,13,4,9,12,1974,1974-07-01,Germany,GER,UEFA,both
+214,6,East Germany,6,2,2,2,5,5,0,6,1974,1974-07-01,Germany,GER,UEFA,both
+215,7,Austria,6,3,0,3,7,10,−3,6,1978,1978-07-01,Austria,AUT,UEFA,both
+216,18,Austria,3,1,0,2,2,3,−1,2,1990,1990-07-01,Austria,AUT,UEFA,both
+217,8,Austria,5,2,1,2,5,4,1,5,1982,1982-07-01,Austria,AUT,UEFA,both
+218,3,Austria,5,4,0,1,17,12,5,8,1954,1954-07-01,Austria,AUT,UEFA,both
+219,4,Austria,4,2,0,2,7,7,0,4,1934,1934-07-01,Austria,AUT,UEFA,both
+220,15,Austria,3,0,1,2,2,7,−5,1,1958,1958-07-01,Austria,AUT,UEFA,both
+221,23,Austria,3,0,2,1,3,4,−1,2,1998,1998-07-01,Austria,AUT,UEFA,both
+222,8,Peru,6,2,1,3,7,12,−5,5,1978,1978-07-01,Peru,PER,CONMEBOL,both
+223,20,Peru,3,0,2,1,2,6,−4,2,1982,1982-07-01,Peru,PER,CONMEBOL,both
+224,10,Peru,2,0,0,2,1,4,−3,0,1930,1930-07-01,Peru,PER,CONMEBOL,both
+225,21,Peru,3,1,0,2,2,2,0,3,2018,2018-07-01,Peru,PER,CONMEBOL,both
+226,7,Peru,4,2,0,2,9,9,0,4,1970,1970-07-01,Peru,PER,CONMEBOL,both
+227,9,Tunisia,3,1,1,1,3,2,1,3,1978,1978-07-01,Tunisia,TUN,CAF,both
+228,26,Tunisia,3,1,0,2,5,8,−3,3,2018,2018-07-01,Tunisia,TUN,CAF,both
+229,29,Tunisia,3,0,1,2,1,5,−4,1,2002,2002-07-01,Tunisia,TUN,CAF,both
+230,24,Tunisia,3,0,1,2,3,6,−3,1,2006,2006-07-01,Tunisia,TUN,CAF,both
+231,26,Tunisia,3,0,1,2,1,4,−3,1,1998,1998-07-01,Tunisia,TUN,CAF,both
+232,11,Scotland,3,1,1,1,5,6,−1,3,1978,1978-07-01,Scotland,SCO,UEFA,both
+233,19,Scotland,3,0,1,2,1,3,−2,1,1986,1986-07-01,Scotland,SCO,UEFA,both
+234,18,Scotland,3,1,0,2,2,3,−1,2,1990,1990-07-01,Scotland,SCO,UEFA,both
+235,15,Scotland,3,1,1,1,8,8,0,3,1982,1982-07-01,Scotland,SCO,UEFA,both
+236,15,Scotland,2,0,0,2,0,8,−8,0,1954,1954-07-01,Scotland,SCO,UEFA,both
+237,14,Scotland,3,0,1,2,4,6,−2,1,1958,1958-07-01,Scotland,SCO,UEFA,both
+238,27,Scotland,3,0,1,2,2,6,−4,1,1998,1998-07-01,Scotland,SCO,UEFA,both
+239,9,Scotland,3,1,2,0,3,1,2,4,1974,1974-07-01,Scotland,SCO,UEFA,both
+240,12,France,3,1,0,2,5,5,0,2,1978,1978-07-01,France,FRA,UEFA,both
+241,3,France,7,4,2,1,12,6,6,10,1986,1986-07-01,France,FRA,UEFA,both
+242,4,France,7,3,2,2,16,12,4,8,1982,1982-07-01,France,FRA,UEFA,both
+243,11,France,2,1,0,1,3,3,0,2,1954,1954-07-01,France,FRA,UEFA,both
+244,7,France,3,1,0,2,4,3,1,2,1930,1930-07-01,France,FRA,UEFA,both
+245,1,France,7,6,1,0,14,6,8,19,2018,2018-07-01,France,FRA,UEFA,both
+246,9,France,1,0,0,1,2,3,−1,0,1934,1934-07-01,France,FRA,UEFA,both
+247,28,France,3,0,1,2,0,3,−3,1,2002,2002-07-01,France,FRA,UEFA,both
+248,7,France,5,3,1,1,10,3,7,10,2014,2014-07-01,France,FRA,UEFA,both
+249,8,France,2,1,0,1,4,4,0,2,1938,1938-07-01,France,FRA,UEFA,both
+250,29,France,3,0,1,2,1,4,−3,1,2010,2010-07-01,France,FRA,UEFA,both
+251,2,France,7,4,3,0,9,3,6,15,2006,2006-07-01,France,FRA,UEFA,both
+252,3,France,6,4,0,2,23,15,8,8,1958,1958-07-01,France,FRA,UEFA,both
+253,13,France,3,0,1,2,2,5,−3,1,1966,1966-07-01,France,FRA,UEFA,both
+254,1,France,7,6,1,0,15,2,13,19,1998,1998-07-01,France,FRA,UEFA,both
+255,14,Iran,3,0,1,2,2,8,−6,1,1978,1978-07-01,IR Iran,IRN,AFC,both
+256,17,Iran,3,1,1,1,2,2,0,4,2018,2018-07-01,IR Iran,IRN,AFC,both
+257,28,Iran,3,0,1,2,1,4,−3,1,2014,2014-07-01,IR Iran,IRN,AFC,both
+258,25,Iran,3,0,1,2,2,6,−4,1,2006,2006-07-01,IR Iran,IRN,AFC,both
+259,20,Iran,3,1,0,2,2,4,−2,3,1998,1998-07-01,IR Iran,IRN,AFC,both
+260,15,Hungary,3,0,0,3,3,8,−5,0,1978,1978-07-01,Hungary,HUN,UEFA,both
+261,18,Hungary,3,1,0,2,2,9,−7,2,1986,1986-07-01,Hungary,HUN,UEFA,both
+262,14,Hungary,3,1,1,1,12,6,6,3,1982,1982-07-01,Hungary,HUN,UEFA,both
+263,2,Hungary,5,4,0,1,27,10,17,8,1954,1954-07-01,Hungary,HUN,UEFA,both
+264,6,Hungary,2,1,0,1,5,4,1,2,1934,1934-07-01,Hungary,HUN,UEFA,both
+265,2,Hungary,4,3,0,1,15,5,10,6,1938,1938-07-01,Hungary,HUN,UEFA,both
+266,10,Hungary,4,1,1,2,7,5,2,3,1958,1958-07-01,Hungary,HUN,UEFA,both
+267,6,Hungary,4,2,0,2,8,7,1,4,1966,1966-07-01,Hungary,HUN,UEFA,both
+268,5,Hungary,4,2,1,1,8,3,5,5,1962,1962-07-01,Hungary,HUN,UEFA,both
+269,4,Belgium,7,2,2,3,12,15,−3,6,1986,1986-07-01,Belgium,BEL,UEFA,both
+270,11,Belgium,4,2,0,2,6,4,2,4,1990,1990-07-01,Belgium,BEL,UEFA,both
+271,11,Belgium,4,2,0,2,4,4,0,6,1994,1994-07-01,Belgium,BEL,UEFA,both
+272,10,Belgium,5,2,1,2,3,5,−2,5,1982,1982-07-01,Belgium,BEL,UEFA,both
+273,12,Belgium,2,0,1,1,5,8,−3,1,1954,1954-07-01,Belgium,BEL,UEFA,both
+274,11,Belgium,2,0,0,2,0,4,−4,0,1930,1930-07-01,Belgium,BEL,UEFA,both
+275,3,Belgium,7,6,0,1,16,6,10,18,2018,2018-07-01,Belgium,BEL,UEFA,both
+276,15,Belgium,1,0,0,1,2,5,−3,0,1934,1934-07-01,Belgium,BEL,UEFA,both
+277,14,Belgium,4,1,2,1,6,7,−1,5,2002,2002-07-01,Belgium,BEL,UEFA,both
+278,6,Belgium,5,4,0,1,6,3,3,12,2014,2014-07-01,Belgium,BEL,UEFA,both
+279,13,Belgium,1,0,0,1,1,3,−2,0,1938,1938-07-01,Belgium,BEL,UEFA,both
+280,10,Belgium,3,1,0,2,4,5,−1,2,1970,1970-07-01,Belgium,BEL,UEFA,both
+281,19,Belgium,3,0,3,0,3,3,0,3,1998,1998-07-01,Belgium,BEL,UEFA,both
+282,9,Denmark,4,3,0,1,10,6,4,6,1986,1986-07-01,Denmark,DEN,UEFA,both
+283,11,Denmark,4,1,3,0,3,2,1,6,2018,2018-07-01,Denmark,DEN,UEFA,both
+284,10,Denmark,4,2,1,1,5,5,0,7,2002,2002-07-01,Denmark,DEN,UEFA,both
+285,24,Denmark,3,1,0,2,3,6,−3,3,2010,2010-07-01,Denmark,DEN,UEFA,both
+286,8,Denmark,5,2,1,2,9,7,2,7,1998,1998-07-01,Denmark,DEN,UEFA,both
+287,10,Soviet Union,4,2,1,1,12,5,7,5,1986,1986-07-01,Russia,RUS,UEFA,both
+288,17,Soviet Union,3,1,0,2,4,4,0,2,1990,1990-07-01,Russia,RUS,UEFA,both
+289,18,Russia,3,1,0,2,7,6,1,3,1994,1994-07-01,Russia,RUS,UEFA,both
+290,7,Soviet Union,5,2,2,1,7,4,3,6,1982,1982-07-01,Russia,RUS,UEFA,both
+291,8,Russia,5,2,2,1,11,7,4,8,2018,2018-07-01,Russia,RUS,UEFA,both
+292,22,Russia,3,1,0,2,4,4,0,3,2002,2002-07-01,Russia,RUS,UEFA,both
+293,24,Russia,3,0,2,1,2,3,−1,2,2014,2014-07-01,Russia,RUS,UEFA,both
+294,6,Soviet Union,5,2,1,2,5,6,−1,5,1958,1958-07-01,Russia,RUS,UEFA,both
+295,5,Soviet Union,4,2,1,1,6,2,4,5,1970,1970-07-01,Russia,RUS,UEFA,both
+296,4,Soviet Union,6,4,0,2,10,6,4,8,1966,1966-07-01,Russia,RUS,UEFA,both
+297,6,Soviet Union,4,2,1,1,9,7,2,5,1962,1962-07-01,Russia,RUS,UEFA,both
+298,11,Morocco,4,1,2,1,3,2,1,4,1986,1986-07-01,Morocco,MAR,CAF,both
+299,23,Morocco,3,0,0,3,2,5,−3,0,1994,1994-07-01,Morocco,MAR,CAF,both
+300,30,Morocco,3,0,1,2,2,4,−2,1,2018,2018-07-01,Morocco,MAR,CAF,both
+301,14,Morocco,3,0,1,2,2,6,−4,1,1970,1970-07-01,Morocco,MAR,CAF,both
+302,18,Morocco,3,1,1,1,5,5,0,4,1998,1998-07-01,Morocco,MAR,CAF,both
+303,15,Bulgaria,4,0,2,2,2,6,−4,2,1986,1986-07-01,Bulgaria,BUL,UEFA,both
+304,4,Bulgaria,7,3,1,3,10,11,−1,10,1994,1994-07-01,Bulgaria,BUL,UEFA,both
+305,13,Bulgaria**,3,0,1,2,5,9,−4,1,1970,1970-07-01,Bulgaria,BUL,UEFA,both
+306,15,Bulgaria,3,0,0,3,1,8,−7,0,1966,1966-07-01,Bulgaria,BUL,UEFA,both
+307,29,Bulgaria,3,0,1,2,1,7,−6,1,1998,1998-07-01,Bulgaria,BUL,UEFA,both
+308,15,Bulgaria,3,0,1,2,1,7,−6,1,1962,1962-07-01,Bulgaria,BUL,UEFA,both
+309,12,Bulgaria,3,0,2,1,2,5,−3,2,1974,1974-07-01,Bulgaria,BUL,UEFA,both
+310,17,Portugal,3,1,0,2,2,4,−2,2,1986,1986-07-01,Portugal,POR,UEFA,both
+311,13,Portugal,4,1,2,1,6,6,0,5,2018,2018-07-01,Portugal,POR,UEFA,both
+312,21,Portugal,3,1,0,2,6,4,2,3,2002,2002-07-01,Portugal,POR,UEFA,both
+313,18,Portugal,3,1,1,1,4,7,−3,4,2014,2014-07-01,Portugal,POR,UEFA,both
+314,11,Portugal,4,1,2,1,7,1,6,5,2010,2010-07-01,Portugal,POR,UEFA,both
+315,4,Portugal,7,4,1,2,7,5,2,13,2006,2006-07-01,Portugal,POR,UEFA,both
+316,3,Portugal,6,5,0,1,17,8,9,10,1966,1966-07-01,Portugal,POR,UEFA,both
+317,20,South Korea,3,0,1,2,4,7,−3,1,1986,1986-07-01,Korea Republic,KOR,AFC,both
+318,22,South Korea,3,0,0,3,1,6,−5,0,1990,1990-07-01,Korea Republic,KOR,AFC,both
+319,20,South Korea,3,0,2,1,4,5,−1,2,1994,1994-07-01,Korea Republic,KOR,AFC,both
+320,16,South Korea,2,0,0,2,0,16,−16,0,1954,1954-07-01,Korea Republic,KOR,AFC,both
+321,25,South Korea,3,1,0,2,3,3,0,3,2018,2018-07-01,Korea Republic,KOR,AFC,both
+322,4,South Korea,7,3,2,2,8,6,2,11,2002,2002-07-01,Korea Republic,KOR,AFC,both
+323,27,South Korea,3,0,1,2,3,6,−3,1,2014,2014-07-01,Korea Republic,KOR,AFC,both
+324,15,South Korea,4,1,1,2,6,8,−2,4,2010,2010-07-01,Korea Republic,KOR,AFC,both
+325,17,South Korea,3,1,1,1,3,4,−1,4,2006,2006-07-01,Korea Republic,KOR,AFC,both
+326,30,South Korea,3,0,1,2,2,9,−7,1,1998,1998-07-01,Korea Republic,KOR,AFC,both
+327,21,Northern Ireland,3,0,1,2,2,6,−4,1,1986,1986-07-01,Northern Ireland,NIR,UEFA,both
+328,9,Northern Ireland,5,1,3,1,5,7,−2,5,1982,1982-07-01,Northern Ireland,NIR,UEFA,both
+329,7,Northern Ireland,5,2,1,2,6,10,−4,5,1958,1958-07-01,Northern Ireland,NIR,UEFA,both
+330,22,Algeria,3,0,1,2,1,5,−4,1,1986,1986-07-01,Algeria,ALG,CAF,both
+331,13,Algeria,3,2,0,1,5,5,0,4,1982,1982-07-01,Algeria,ALG,CAF,both
+332,14,Algeria,4,1,1,2,7,7,0,4,2014,2014-07-01,Algeria,ALG,CAF,both
+333,28,Algeria,3,0,1,2,0,2,−2,1,2010,2010-07-01,Algeria,ALG,CAF,both
+334,23,Iraq,3,0,0,3,1,4,−3,0,1986,1986-07-01,Iraq,IRQ,AFC,both
+335,24,Canada,3,0,0,3,0,5,−5,0,1986,1986-07-01,Canada,CAN,CONCACAF,both
+336,6,Czechoslovakia,5,3,0,2,10,5,5,6,1990,1990-07-01,Czech Republic,CZE,UEFA,both
+337,19,Czechoslovakia,3,0,2,1,2,4,−2,2,1982,1982-07-01,Czech Republic,CZE,UEFA,both
+338,14,Czechoslovakia,2,0,0,2,0,7,−7,0,1954,1954-07-01,Czech Republic,CZE,UEFA,both
+339,2,Czechoslovakia,4,3,0,1,9,6,3,6,1934,1934-07-01,Czech Republic,CZE,UEFA,both
+340,5,Czechoslovakia,3,1,1,1,5,3,2,3,1938,1938-07-01,Czech Republic,CZE,UEFA,both
+341,20,Czech Republic,3,1,0,2,3,4,−1,3,2006,2006-07-01,Czech Republic,CZE,UEFA,both
+342,9,Czechoslovakia,4,1,1,2,9,6,3,3,1958,1958-07-01,Czech Republic,CZE,UEFA,both
+343,15,Czechoslovakia,3,0,0,3,2,7,−5,0,1970,1970-07-01,Czech Republic,CZE,UEFA,both
+344,2,Czechoslovakia,6,3,1,2,7,7,0,7,1962,1962-07-01,Czech Republic,CZE,UEFA,both
+345,7,Cameroon,5,3,0,2,7,9,−2,6,1990,1990-07-01,Cameroon,CMR,CAF,both
+346,22,Cameroon,3,0,1,2,3,11,−8,1,1994,1994-07-01,Cameroon,CMR,CAF,both
+347,17,Cameroon,3,0,3,0,1,1,0,3,1982,1982-07-01,Cameroon,CMR,CAF,both
+348,20,Cameroon,3,1,1,1,2,3,−1,4,2002,2002-07-01,Cameroon,CMR,CAF,both
+349,32,Cameroon,3,0,0,3,1,9,−8,0,2014,2014-07-01,Cameroon,CMR,CAF,both
+350,31,Cameroon,3,0,0,3,2,5,−3,0,2010,2010-07-01,Cameroon,CMR,CAF,both
+351,25,Cameroon,3,0,2,1,2,5,−3,2,1998,1998-07-01,Cameroon,CMR,CAF,both
+352,8,Republic of Ireland,5,0,4,1,2,3,−1,4,1990,1990-07-01,Republic of Ireland,IRL,UEFA,both
+353,16,Republic of Ireland,4,1,1,2,2,4,−2,4,1994,1994-07-01,Republic of Ireland,IRL,UEFA,both
+354,12,Republic of Ireland,4,1,3,0,6,3,3,6,2002,2002-07-01,Republic of Ireland,IRL,UEFA,both
+355,12,Romania,4,1,2,1,4,3,1,4,1990,1990-07-01,Romania,ROU,UEFA,both
+356,6,Romania,5,3,1,1,10,9,1,10,1994,1994-07-01,Romania,ROU,UEFA,both
+357,8,Romania,2,1,0,1,3,5,−2,2,1930,1930-07-01,Romania,ROU,UEFA,both
+358,12,Romania,1,0,0,1,1,2,−1,0,1934,1934-07-01,Romania,ROU,UEFA,both
+359,9,Romania,2,0,1,1,4,5,-1,1,1938,1938-07-01,Romania,ROU,UEFA,both
+360,10,Romania,3,1,0,2,4,5,−1,2,1970,1970-07-01,Romania,ROU,UEFA,both
+361,11,Romania,4,2,1,1,4,3,1,7,1998,1998-07-01,Romania,ROU,UEFA,both
+362,13,Costa Rica,4,2,0,2,4,6,−2,4,1990,1990-07-01,Costa Rica,CRC,CONCACAF,both
+363,28,Costa Rica,3,0,1,2,2,5,−3,1,2018,2018-07-01,Costa Rica,CRC,CONCACAF,both
+364,19,Costa Rica,3,1,1,1,5,6,−1,4,2002,2002-07-01,Costa Rica,CRC,CONCACAF,both
+365,8,Costa Rica,5,2,3,0,5,2,3,9,2014,2014-07-01,Costa Rica,CRC,CONCACAF,both
+366,31,Costa Rica,3,0,0,3,3,9,−6,0,2006,2006-07-01,Costa Rica,CRC,CONCACAF,both
+367,14,Colombia,4,1,1,2,4,4,0,3,1990,1990-07-01,Colombia,COL,CONMEBOL,both
+368,19,Colombia,3,1,0,2,4,5,−1,3,1994,1994-07-01,Colombia,COL,CONMEBOL,both
+369,9,Colombia,4,2,1,1,6,3,3,7,2018,2018-07-01,Colombia,COL,CONMEBOL,both
+370,5,Colombia,5,4,0,1,12,4,8,12,2014,2014-07-01,Colombia,COL,CONMEBOL,both
+371,21,Colombia,3,1,0,2,1,3,−2,3,1998,1998-07-01,Colombia,COL,CONMEBOL,both
+372,14,Colombia,3,0,1,2,5,11,−6,1,1962,1962-07-01,Colombia,COL,CONMEBOL,both
+373,20,Egypt,3,0,2,1,1,2,−1,2,1990,1990-07-01,Egypt,EGY,CAF,both
+374,31,Egypt,3,0,0,3,2,6,−4,0,2018,2018-07-01,Egypt,EGY,CAF,both
+375,13,Egypt,1,0,0,1,2,4,−2,0,1934,1934-07-01,Egypt,EGY,CAF,both
+376,24,United Arab Emirates,3,0,0,3,2,11,−9,0,1990,1990-07-01,United Arab Emirates,UAE,AFC,both
+377,9,Nigeria,4,2,0,2,7,4,3,6,1994,1994-07-01,Nigeria,NGA,CAF,both
+378,20,Nigeria,3,1,0,2,3,4,−1,3,2018,2018-07-01,Nigeria,NGA,CAF,both
+379,27,Nigeria,3,0,1,2,1,3,−2,1,2002,2002-07-01,Nigeria,NGA,CAF,both
+380,16,Nigeria,4,1,1,2,3,5,−2,4,2014,2014-07-01,Nigeria,NGA,CAF,both
+381,27,Nigeria,3,0,1,2,3,5,−2,1,2010,2010-07-01,Nigeria,NGA,CAF,both
+382,12,Nigeria,4,2,0,2,6,9,−3,6,1998,1998-07-01,Nigeria,NGA,CAF,both
+383,12,Saudi Arabia,4,2,0,2,5,6,−1,6,1994,1994-07-01,Saudi Arabia,KSA,AFC,both
+384,23,Saudi Arabia,3,1,0,2,2,7,−5,3,2018,2018-07-01,Saudi Arabia,KSA,AFC,both
+385,32,Saudi Arabia,3,0,0,3,0,12,−12,0,2002,2002-07-01,Saudi Arabia,KSA,AFC,both
+386,28,Saudi Arabia,3,0,1,2,2,7,−5,1,2006,2006-07-01,Saudi Arabia,KSA,AFC,both
+387,28,Saudi Arabia,3,0,1,2,2,7,−5,1,1998,1998-07-01,Saudi Arabia,KSA,AFC,both
+388,17,Norway,3,1,1,1,1,1,0,4,1994,1994-07-01,Norway,NOR,UEFA,both
+389,12,Norway,1,0,0,1,1,2,−1,0,1938,1938-07-01,Norway,NOR,UEFA,both
+390,15,Norway,4,1,2,1,5,5,0,5,1998,1998-07-01,Norway,NOR,UEFA,both
+391,24,Greece,3,0,0,3,0,10,−10,0,1994,1994-07-01,Greece,GRE,UEFA,both
+392,13,Greece,4,1,2,1,3,5,−2,5,2014,2014-07-01,Greece,GRE,UEFA,both
+393,25,Greece,3,1,0,2,2,5,−3,3,2010,2010-07-01,Greece,GRE,UEFA,both
+394,18,Honduras,3,0,2,1,2,3,−1,2,1982,1982-07-01,Honduras,HON,CONCACAF,both
+395,31,Honduras,3,0,0,3,1,8,−7,0,2014,2014-07-01,Honduras,HON,CONCACAF,both
+396,30,Honduras,3,0,1,2,0,3,−3,1,2010,2010-07-01,Honduras,HON,CONCACAF,both
+397,21,Kuwait,3,0,1,2,2,6,−4,1,1982,1982-07-01,Kuwait,KUW,AFC,both
+398,23,New Zealand,3,0,0,3,2,12,−10,0,1982,1982-07-01,New Zealand,NZL,OFC,both
+399,22,New Zealand,3,0,3,0,2,2,0,3,2010,2010-07-01,New Zealand,NZL,OFC,both
+400,24,El Salvador,3,0,0,3,1,13,−12,0,1982,1982-07-01,El Salvador,SLV,CONCACAF,both
+401,16,El Salvador,3,0,0,3,0,9,−9,0,1970,1970-07-01,El Salvador,SLV,CONCACAF,both
+402,9,Turkey,3,1,0,2,10,11,−1,2,1954,1954-07-01,Turkey,TUR,UEFA,both
+403,3,Turkey,7,4,1,2,10,6,4,13,2002,2002-07-01,Turkey,TUR,UEFA,both
+404,2,Croatia,7,4,2,1,14,9,5,14,2018,2018-07-01,Croatia,CRO,UEFA,both
+405,23,Croatia,3,1,0,2,2,3,−1,3,2002,2002-07-01,Croatia,CRO,UEFA,both
+406,19,Croatia,3,1,0,2,6,6,0,3,2014,2014-07-01,Croatia,CRO,UEFA,both
+407,22,Croatia,3,0,2,1,2,3,−1,2,2006,2006-07-01,Croatia,CRO,UEFA,both
+408,3,Croatia,7,5,0,2,11,5,6,15,1998,1998-07-01,Croatia,CRO,UEFA,both
+409,16,Japan,4,1,1,2,6,7,−1,4,2018,2018-07-01,Japan,JPN,AFC,both
+410,9,Japan,4,2,1,1,5,3,2,7,2002,2002-07-01,Japan,JPN,AFC,both
+411,29,Japan,3,0,1,2,2,6,−4,1,2014,2014-07-01,Japan,JPN,AFC,both
+412,9,Japan,4,2,1,1,4,2,2,7,2010,2010-07-01,Japan,JPN,AFC,both
+413,28,Japan,3,0,1,2,2,7,−5,1,2006,2006-07-01,Japan,JPN,AFC,both
+414,31,Japan,3,0,0,3,1,4,−3,0,1998,1998-07-01,Japan,JPN,AFC,both
+415,18,Senegal,3,1,1,1,4,4,0,4,2018,2018-07-01,Senegal,SEN,CAF,both
+416,7,Senegal,5,2,2,1,7,6,1,8,2002,2002-07-01,Senegal,SEN,CAF,both
+417,24,Serbia,3,1,0,2,2,4,−2,3,2018,2018-07-01,Serbia,SRB,UEFA,both
+418,23,Serbia,3,1,0,2,2,3,−1,3,2010,2010-07-01,Serbia,SRB,UEFA,both
+419,27,Australia,3,0,1,2,2,5,−3,1,2018,2018-07-01,Australia,AUS,AFC,both
+420,30,Australia,3,0,0,3,3,9,−6,0,2014,2014-07-01,Australia,AUS,AFC,both
+421,21,Australia,3,1,1,1,3,6,−3,4,2010,2010-07-01,Australia,AUS,AFC,both
+422,16,Australia,4,1,1,2,5,6,−1,4,2006,2006-07-01,Australia,AUS,AFC,both
+423,14,Australia,3,0,1,2,0,5,−5,1,1974,1974-07-01,Australia,AUS,AFC,both
+424,29,Iceland,3,0,1,2,2,5,−3,1,2018,2018-07-01,Iceland,ISL,UEFA,both
+425,32,Panama,3,0,0,3,2,11,−9,0,2018,2018-07-01,Panama,PAN,CONCACAF,both
+426,17,South Africa,3,1,1,1,5,5,0,4,2002,2002-07-01,South Africa,RSA,CAF,both
+427,20,South Africa,3,1,1,1,3,5,−2,4,2010,2010-07-01,South Africa,RSA,CAF,both
+428,24,South Africa,3,0,2,1,3,6,−3,2,1998,1998-07-01,South Africa,RSA,CAF,both
+429,24,Ecuador,3,1,0,2,2,4,−2,3,2002,2002-07-01,Ecuador,ECU,CONMEBOL,both
+430,17,Ecuador,3,1,1,1,3,3,0,4,2014,2014-07-01,Ecuador,ECU,CONMEBOL,both
+431,12,Ecuador,4,2,0,2,5,4,1,6,2006,2006-07-01,Ecuador,ECU,CONMEBOL,both
+432,30,Slovenia,3,0,0,3,2,7,−5,0,2002,2002-07-01,Slovenia,SVN,UEFA,both
+433,18,Slovenia,3,1,1,1,3,3,0,4,2010,2010-07-01,Slovenia,SVN,UEFA,both
+434,31,China PR,3,0,0,3,0,9,−9,0,2002,2002-07-01,China PR,CHN,AFC,both
+435,20,Bosnia and Herzegovina,3,1,0,2,4,4,0,3,2014,2014-07-01,Bosnia and Herzegovina,BIH,UEFA,both
+436,21,Ivory Coast,3,1,0,2,4,5,−1,3,2014,2014-07-01,Côte d'Ivoire,CIV,CAF,both
+437,17,Ivory Coast,3,1,1,1,4,3,1,4,2010,2010-07-01,Côte d'Ivoire,CIV,CAF,both
+438,19,Ivory Coast,3,1,0,2,5,6,−1,3,2006,2006-07-01,Côte d'Ivoire,CIV,CAF,both
+439,25,Ghana,3,0,1,2,4,6,−2,1,2014,2014-07-01,Ghana,GHA,CAF,both
+440,7,Ghana,5,2,2,1,5,4,1,8,2010,2010-07-01,Ghana,GHA,CAF,both
+441,13,Ghana,4,2,0,2,4,6,−2,6,2006,2006-07-01,Ghana,GHA,CAF,both
+442,7,Cuba,3,1,1,1,5,12,−7,3,1938,1938-07-01,Cuba,CUB,CONCACAF,both
+443,15,Dutch East Indies,1,0,0,1,0,6,−6,0,1938,1938-07-01,Netherlands Antilles,ANT,CONCACAF,both
+444,16,Slovakia,4,1,1,2,5,7,−2,4,2010,2010-07-01,Slovakia,SVK,UEFA,both
+445,32,North Korea,3,0,0,3,1,12,−11,0,2010,2010-07-01,Korea DPR,PRK,AFC,both
+446,8,North Korea,4,1,1,2,5,9,−4,3,1966,1966-07-01,Korea DPR,PRK,AFC,both
+447,8,Ukraine,5,2,1,2,5,7,−2,7,2006,2006-07-01,Ukraine,UKR,UEFA,both
+448,23,Angola,3,0,2,1,1,2,−1,2,2006,2006-07-01,Angola,ANG,CAF,both
+449,27,Trinidad and Tobago,3,0,1,2,0,4,−4,1,2006,2006-07-01,Trinidad and Tobago,TRI,CONCACAF,both
+450,30,Togo,3,0,0,3,1,6,−5,0,2006,2006-07-01,Togo,TOG,CAF,both
+451,32,Serbia and Montenegro,3,0,0,3,2,10,−8,0,2006,2006-07-01,Serbia and Montenegro,SCG,UEFA,both
+452,5,Wales,5,1,3,1,4,4,0,5,1958,1958-07-01,Wales,WAL,UEFA,both
+453,12,Israel*,3,0,2,1,1,3,−2,2,1970,1970-07-01,Israel,ISR,UEFA,both
+454,22,Jamaica,3,1,0,2,3,9,−6,3,1998,1998-07-01,Jamaica,JAM,CONCACAF,both
+455,15,Haiti,3,0,0,3,2,14,−12,0,1974,1974-07-01,Haiti,HAI,CONCACAF,both
+456,16,Zaire,3,0,0,3,0,14,−14,0,1974,1974-07-01,Zaire,ZAI,CAF,both

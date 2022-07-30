@@ -206,7 +206,8 @@ function updatetext() {
     countrywc2 = wclist[yearY1]
     countywon2 = wcwinners[yearY1]
 
-    var text1 = "World cup of "+year+"  took place in "+countrywc+", and it was won by "+countywon+"!";
+    var text1 = "World cup of "+year+"  took place in <b><span style='color: darkblue'>"+countrywc+"</span></b>, and it was won by <b><span style='color: darkblue'>"+countywon+"</span></b>!";
+    // var text1 = "World cup of "+year+"  took place in "+countrywc+", and it was won by "+countywon+"!";
     var element = document.getElementById("id01");
     element.innerHTML = text1;
 
@@ -299,9 +300,9 @@ button1.on("click", function() {
     console.log(metric);
 
     countrywc = wclist[year]
-    countywon = wcwinners[year]
+    countywon = wcwon[year]
 
-    var text1 = "World cup of "+year+"  took place in "+countrywc+", and it was won by "+countywon+"!";
+    var text1 = "World cup of "+year+"  took place in <b><span style='color: darkblue'>"+countrywc+"</span></b>, and it was won by <b><span style='color: darkblue'>"+countywon+"</span></b>!";
     const element = document.getElementById("id01");
     element.innerHTML = text1;
 
