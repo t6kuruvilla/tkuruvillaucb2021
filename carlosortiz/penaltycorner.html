@@ -349,7 +349,9 @@
 		}
 
 		function chart1(countries) {
-			console.log(countries)
+
+			var chart1aData = dataRatios.filter(chart1aData => countries.indexOf(chart1aData.Team) !== -1)
+			var chart1bData = dataRatios.filter(chart1bData => countries.indexOf(chart1bData.Team) == -1)
 
 			return {
 
@@ -358,7 +360,7 @@
 					{
 						width: 550,
 						height: 455,
-						data: { values: dataRatios },
+						data: { values: chart1aData },
 						mark: 'bar',
 						encoding: {
 							y: {
@@ -380,7 +382,7 @@
 
 						width: 550,
 						height: 455,
-						data: { values: dataRatios },
+						data: { values: chart1bData },
 						mark: 'bar',
 						encoding: {
 							y: {
@@ -407,22 +409,8 @@
 
 		function chart2(countries) {
 
-			// object countries is a list of countries the user selected for analysis, see bellow
-			// countries = ['FRA', 'CHI', 'MEX']
-
-			const chart1Data = penaltyData.filter(Team => countries.indexOf(countries.Team) !== -1)
-			//This is meant to filter the JSON table penaltyData to include the user selected countries in 
-			//object countries
-
-			const chart2Data = penaltyData.filter(Team => countries.indexOf(countries.Team) == -1)
-			//This is meant to create a second data JSON table that includes all the country the user 
-			//did NOT select, i.e. the complement to user selected countries (Or the Non Elites)
-
-			//Data is not getting to this point as can be witnessed by console log chart1Data
-
-			console.log(chart2Data)
-
-			//dataB.filter(Team => countries.indexOf(countries.Team) !== -1)
+			var chart2aData = penaltyData.filter(chart2aData => countries.indexOf(chart2aData.Team) !== -1)
+			var chart2bData = penaltyData.filter(chart2bData => countries.indexOf(chart2bData.Team) == -1)
 
 			return {
 				$schema: 'https://vega.github.io/schema/vega-lite/v5.json',
@@ -431,7 +419,7 @@
 						width: 550,
 						height: 402,
 						title: "Elite team performance per number of penalty kick on shootout",
-						data: { values: chart2Data },
+						data: { values: chart2aData },
 						layer: [
 							{
 								mark: { "type": "line", "point": { "filled": false, "fill": "white" } },
@@ -457,7 +445,7 @@
 						width: 550,
 						height: 402,
 						title: "Elite team performance per number of penalty kick on shootout",
-						data: { values: chart2Data },
+						data: { values: chart2bData },
 						layer: [
 							{
 								mark: { "type": "line", "point": { "filled": false, "fill": "white" } },
@@ -487,6 +475,9 @@
 
 		function chart3(countries) {
 
+			var chart3aData = dataZone.filter(chart3aData => countries.indexOf(chart3aData.Team) !== -1)
+			var chart3bData = dataZone.filter(chart3bData => countries.indexOf(chart3bData.Team) == -1)
+
 			console.log(dataZone)
 
 			return {
@@ -496,7 +487,7 @@
 					{
 						width: 550,
 						height: 465,
-						data: { values: dataZone },
+						data: { values: chart3aData },
 						mark: "rect",
 						encoding: {
 							y: { "field": "Y", "type": "quantitative", "title": "" },
@@ -511,7 +502,7 @@
 					{
 						width: 550,
 						height: 465,
-						data: { values: dataZone },
+						data: { values: chart3bData },
 						mark: "rect",
 						encoding: {
 							y: { "field": "Y", "type": "quantitative", "title": "" },
