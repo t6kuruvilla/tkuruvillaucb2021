@@ -91,7 +91,7 @@ function rank1fifa(chartid, datafifa) {
 
     var spec = {
         $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
-        title: "Countries with the most Number One Rank (1993-2018)",
+        title: "Top Countries at NUNMBER One FIFA Rank Position (1993-2018)",
         data: {values: firstr},
         mark: 'bar',
         encoding: {
