@@ -147,6 +147,16 @@ wc1fifa('#chart4b', wcdata)
 
 
 
+// Wait of Click on button action
+d3.select("#select4").on("change", function() {
+
+  var country = d3.select(this).property("value")
+  console.log(metric);
+
+  fifarank('#chart4', country, fifar, wcdata)
+
+});
+
 
 // Select the button
 

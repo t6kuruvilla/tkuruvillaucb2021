@@ -221,66 +221,55 @@ confgraph('#chart1', year, metric, wcdata)     // chartid = '#chart'; datawc= wc
 teamgraph('#chart2', year, metric, wcdata)
 confgraph_concat('#chart1f', year, wcdata)
 
-// Select the button for DATA3
-var dropbutton3= d3.select("#select3");
+
 
 // Wait of Click on button action
-dropbutton3.on("click", function() {
+d3.select("#select1").on("change", function() {
 
-    selectElement = document.querySelector('#select3');
-    metric1 = selectElement.options[selectElement.selectedIndex].value;
-    console.log(metric1);
+  var year = d3.select(this).property("value")
+  console.log(year);
+  
+  countrywc = wclist[year]
+  countywon = wcwon[year]
 
-    // confgraph('#chart1', year, wcdata)     // chartid = '#chart'; datawc= wcdata
-    // teamgraph('#chart2', year, wcdata)
-    // wcconfgraph('#chart3', year, datawc)
+  var text1 = "World cup of "+year+"  took place in <b><span style='color: darkblue'>"+countrywc+"</span></b>, and it was won by <b><span style='color: darkblue'>"+countywon+"</span></b>!";
+  const element = document.getElementById("id01");
+  element.innerHTML = text1;
+
+  confgraph('#chart1', year, metric, wcdata)     // chartid = '#chart'; datawc= wcdata
+  teamgraph('#chart2', year, metric, wcdata)
+  confgraph_concat('#chart1f', year, wcdata)
+ 
+});
+
+// Wait of Click on button action
+d3.select("#select2").on("change", function() {
+
+  metric = d3.select(this).property("value")
+  console.log("In SELECT2: ",metric);
+
+  countrywc = wclist[year]
+  countywon = wcwon[year]
+
+  var text1 = "World cup of "+year+"  took place in <b><span style='color: darkblue'>"+countrywc+"</span></b>, and it was won by <b><span style='color: darkblue'>"+countywon+"</span></b>!";
+  const element = document.getElementById("id01");
+  element.innerHTML = text1;
+
+  confgraph('#chart1', year, metric, wcdata)     // chartid = '#chart'; datawc= wcdata
+  teamgraph('#chart2', year, metric, wcdata)
+  confgraph_concat('#chart1f', year, wcdata)
+  
 });
 
 
-// Select the button for DATA3
-var dropbutton1= d3.select("#select1");
-
 // Wait of Click on button action
-dropbutton1.on("click", function() {
+d3.select("#select3").on("change", function() {
 
-    selectElement = document.querySelector('#select1');
-    year = selectElement.options[selectElement.selectedIndex].value;
-    console.log(year);
-
-    // confgraph('#chart1', year, wcdata)     // chartid = '#chart'; datawc= wcdata
-    // teamgraph('#chart2', year, wcdata)
-    // wcconfgraph('#chart3', year, datawc)
-});
-
-
-
-var dropbutton2= d3.select("#select2");
-
-// Wait of Click on button action
-dropbutton2.on("click", function() {
-
-    selectElement = document.querySelector('#select2');
-    metric = selectElement.options[selectElement.selectedIndex].value;
+    var metric = d3.select(this).property("value")
     console.log(metric);
 
-    // confgraph('#chart1', year, wcdata)     // chartid = '#chart'; datawc= wcdata
-    // teamgraph('#chart2', year, wcdata)
-    // wcconfgraph('#chart3', year, datawc)
-});
+    confgraphoverall('#chart0', metric, wcdata)
 
-
-var dropbutton3= d3.select("#select3");
-
-// Wait of Click on button action
-dropbutton3.on("click", function() {
-
-    selectElement = document.querySelector('#select3');
-    country = selectElement.options[selectElement.selectedIndex].value;
-    console.log(country);
-
-    // confgraph('#chart1', year, wcdata)     // chartid = '#chart'; datawc= wcdata
-    // teamgraph('#chart2', year, wcdata)
-    // wcconfgraph('#chart3', year, datawc)
 });
 
 
@@ -312,36 +301,5 @@ button1.on("click", function() {
 
 });
 
-
-// Select the button
-var button2 = d3.select("#Buton2");    
-
-button2.on("click", function() {
-
-    console.log("IN BUTTON 2")
-
-    selectElement2 = document.querySelector('#select3');
-    metric1 = selectElement2.options[selectElement2.selectedIndex].value;
-    console.log(metric1);
-
-    confgraphoverall('#chart0', metric1, wcdata)
-
-});
-
-
-var buttonY1 = d3.select("#ButonY1");    
-
-buttonY1.on("click", function() {
-
-    console.log("IN BUTTON Y1")
-
-    selectElement2 = document.querySelector('#selectY1');
-    yearY1 = selectElement2.options[selectElement2.selectedIndex].value;
-    console.log(yearY1);
-
-    updatetext()
-    confgraph_concat('#chart1f', yearY1, wcdata)
-
-});
 
 

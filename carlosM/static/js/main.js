@@ -1,6 +1,6 @@
 /* global d3, scrollama */
 
-metric = "Points"
+var metric = "Points"
 
 const width = 400,
     height = 400,
@@ -23,49 +23,17 @@ function initdropmenu(){
     select1.html("");
     metriclist.forEach(function(c){
         row1 = select1.append('option').text(c);})
-    // tdatalist.value = year
-    selectElement1 = document.querySelector('#select1');
-    selectElement1.options[selectElement1.selectedIndex].value = metric
     
 
   };
 
-
-
-
-// GRAPH FOR PROGRESSION PERFORMANCE OF CONFEDERATIONS
-function wcconfgraph(chartid, metric, datawc){
-
-    // chartid = '#chart'; datawc= wcdata
-    console.log("In WCCONFGRAPH")
-    var spec = {
-        $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
-        title: "Average "+metric+" by Confederation Across All Worldcups",
-        data: {values: datawc},
-
-        width: 700,
-        height: 250,
-        mark: 'bar',
-        encoding: {
-          x: {field: 'Year',  type: 'ordinal'},
-          y: {field: metric, aggregate: 'mean', type: 'quantitative'},
-          tooltip: [{field: metric, aggregate: 'mean', type: 'quantitative'},
-                    {field: 'confederation', type: 'ordinal'}],
-          color:  {field: 'confederation', type: 'nominal'}
-        }
-      };
-
-    vegaEmbed(chartid, spec)
-    
-  };
 
 // Graph using HCAT
 function conf_country_concat(chartid, year, metric, datawc){
 
   var widthg = 150
-  // chartid = '#chart'; datawc= wcdata
 
-  console.log("IN NEW GRAPH ************")
+  console.log("IN CONCAT : ", metric)
   var spec = {
       $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
       
@@ -98,63 +66,9 @@ function conf_country_concat(chartid, year, metric, datawc){
       vegaEmbed(chartid, spec)
     }
 
-
-
-// PRESENT CONFEDERATION PERFORMANCE FOR A GIVEN YEAR AND METRIC
-function confgraph(chartid, year, metric, datawc){
-
-    // chartid = '#chart'; datawc= wcdata
-    var spec = {
-        $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
-        title: "Average "+metric+" per Confederation - "+year,
-        data: {values: datawc},
-        transform: [{filter: "datum.Year == "+year}],
-        // width: 100,
-        mark: 'bar',
-        encoding: {
-          x: {field: 'confederation',  type: 'ordinal',sort: "-y" },
-          y: {field: metric, aggregate: 'mean', type: 'quantitative', sort: "ascending"},
-          tooltip: [{field: metric, aggregate: 'mean', type: 'quantitative'},
-                    {field: 'confederation', type: 'ordinal'}],
-          color:  {field: 'confederation', type: 'nominal'}
-        }
-      };
-
-    vegaEmbed(chartid, spec)
-    
-  };
-
-// PRESENT CONFEDERATION PERFORMANCE FOR A GIVEN YEAR AND METRIC
-function countrygraph(chartid, year, metric, datawc){
-
-    // chartid = '#chart'; datawc= wcdata
-    var spec = {
-        $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
-        title: metric+" per Country - "+year,
-        data: {values: datawc},
-        transform: [{filter: "datum.Year == "+year}],
-        width: 300,
-        mark: 'bar',
-        encoding: {
-          x: {field: 'Team',  type: 'ordinal',sort: "-y" },
-          y: {field: "Points", aggregate: 'mean', type: 'quantitative', sort: "ascending"},
-          tooltip: [{field: "Points", aggregate: 'mean', type: 'quantitative'},
-                    {field: 'Team', type: 'ordinal'}],
-          color:  {field: 'confederation', type: 'nominal'}
-        }
-      };
-
-    vegaEmbed(chartid, spec)
-    
-  };
-
-
-//window.addEventListener("scroll", function (e) {
-//    console.log(window.scrollY)
-//})
-
-// confgraph('#chart1', 1930, wcdata)
-
+// setup resize event
+initdropmenu()
+conf_country_concat('#chart', 1930, metric, wcdata)
 
 const steps = d3.selectAll(".step")
 
@@ -167,26 +81,18 @@ scroller
         step: ".step",
     })
     .onStepEnter((response) => {
-        // { element, index, direction }
-        // callbacks[response.index]()
+
+      console.log("IN SCROLLER: ", metric)
 
         if (response.index == 1){
-            // confgraph('#chart', 1930, metric, wcdata)
-            // countrygraph('#chart1', 1930, metric, wcdata)
             conf_country_concat('#chart', 1930, metric, wcdata)
         } else if  (response.index == 2) {
-            // confgraph('#chart', 1934, metric, wcdata)
-            // countrygraph('#chart1', 1934, metric, wcdata)
             conf_country_concat('#chart', 1934, metric, wcdata)
         } else if  (response.index == 3) {
-            // confgraph('#chart', 1938, metric, wcdata)
-            // countrygraph('#chart1', 1938, metric, wcdata)
             conf_country_concat('#chart', 1938, metric, wcdata)
         } else {
             var dif1 = response.index - 4
             var year = 1950 + (dif1*4)
-            // confgraph('#chart', year, metric, wcdata)
-            // countrygraph('#chart1', year, metric, wcdata)
             conf_country_concat('#chart', year, metric, wcdata)
         } 
 
@@ -203,44 +109,16 @@ scroller
         console.log("exit", response)
     });
 
-// setup resize event
-initdropmenu()
-// confgraph('#chart', 1930, metric, wcdata)
-// countrygraph('#chart1', 1930, metric, wcdata)
-conf_country_concat('#chart', 1930, metric, wcdata)
-wcconfgraph('#chart2', metric, wcdata)
-
-// Select the button for DATA3
-var dropbutton1= d3.select("#select1");
 
 // Wait of Click on button action
-dropbutton1.on("click", function() {
+d3.select("#select1").on("change", function() {
 
-    selectElement = document.querySelector('#select1');
-    metric = selectElement.options[selectElement.selectedIndex].value;
-    console.log(metric1);
+  metric = d3.select(this).property("value")
+  console.log("In Drop down: ", metric)
 
-    // confgraph('#chart1', year, wcdata)     // chartid = '#chart'; datawc= wcdata
-    // teamgraph('#chart2', year, wcdata)
-    // wcconfgraph('#chart3', year, datawc)
-});
-
-var button1 = d3.select("#Buton1");    
-
-button1.on("click", function() {
-
-    console.log("IN BUTTON 1")
-
-    selectElement1 = document.querySelector('#select1');
-    metric = selectElement1.options[selectElement1.selectedIndex].value;
-    console.log(metric);
-
-    // confgraph('#chart', 1930, metric, wcdata)
-    // countrygraph('#chart1', 1930, metric, wcdata)
-    conf_country_concat('#chart', 1930, metric, wcdata)
-    wcconfgraph('#chart2', metric, wcdata)
+  conf_country_concat('#chart', 1930, metric, wcdata)
 
 });
 
-window.addEventListener("resize", scroller.resize);
-// wcconfgraph('#chart2', metric, wcdata)
+
+// window.addEventListener("resize", scroller.resize);

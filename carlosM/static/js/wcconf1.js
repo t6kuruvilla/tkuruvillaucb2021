@@ -24,7 +24,7 @@ function initdropmenu(){
 
   
 // GRAPH FOR PROGRESSION PERFORMANCE OF CONFEDERATIONS
-  function wcconfgraph(chartid, year, metric, datawc){
+  function wcconfgraph(chartid, metric, datawc){
 
     // chartid = '#chart'; datawc= wcdata
     console.log("In WCCONFGRAPH")
@@ -50,7 +50,7 @@ function initdropmenu(){
 
 
   // GRAPH FOR PROGRESSION PERFORMANCE OF SELECTED CONFEDERATION CONFEDERATIONS
-  function wcconfgraph_selected(chartid, year, metric, datawc, confname){
+  function wcconfgraph_selected(chartid, metric, datawc, confname){
 
    
     // console.log(datawc)
@@ -77,65 +77,24 @@ function initdropmenu(){
   };
 
 initdropmenu()
-wcconfgraph('#chart3', year, metric2, wcdata)
-wcconfgraph_selected('#chart3a', year, metric2, wcdata, confname)
+wcconfgraph('#chart3', metric2, wcdata)
+wcconfgraph_selected('#chart3a', metric2, wcdata, confname)
 
 
-var dropbutton5= d3.select("#select5");
+d3.select("#select5").on("change", function() {
 
-// Wait of Click on button action
-dropbutton5.on("click", function() {
+  var metric = d3.select(this).property("value")
+  console.log(metric);
 
-    selectElement = document.querySelector('#select5');
-    metric5 = selectElement.options[selectElement.selectedIndex].value;
-    console.log(metric);
-
-    // confgraph('#chart1', year, wcdata)     // chartid = '#chart'; datawc= wcdata
-    // teamgraph('#chart2', year, wcdata)
-    // wcconfgraph('#chart3', year, datawc)
-});
-
-
-var dropbutton6= d3.select("#select6");
-
-// Wait of Click on button action
-dropbutton6.on("click", function() {
-
-    selectElement = document.querySelector('#select6');
-    confname = selectElement.options[selectElement.selectedIndex].value;
-    console.log(confname);
-
-    // confgraph('#chart1', year, wcdata)     // chartid = '#chart'; datawc= wcdata
-    // teamgraph('#chart2', year, wcdata)
-    // wcconfgraph('#chart3', year, datawc)
-});
-
-
-
-var button5 = d3.select("#Buton5");    
-
-button5.on("click", function() {
-
-    console.log("IN BUTTON 5")
-
-    selectElement2 = document.querySelector('#select5');
-    metric2 = selectElement2.options[selectElement2.selectedIndex].value;
-    console.log(country);
-
-    wcconfgraph('#chart3', year, metric2, wcdata)
+  wcconfgraph('#chart3', metric, wcdata)
 
 });
 
-var button6 = d3.select("#Buton6");    
 
-button6.on("click", function() {
+d3.select("#select6").on("change", function() {
 
-    console.log("IN BUTTON 6")
+  var confname = d3.select(this).property("value")
 
-    selectElement2 = document.querySelector('#select6');
-    confname = selectElement2.options[selectElement2.selectedIndex].value;
-    console.log(confname);
-
-    wcconfgraph_selected('#chart3a', year, metric2, wcdata, confname)
+  wcconfgraph_selected('#chart3a', metric2, wcdata, confname)
 
 });
