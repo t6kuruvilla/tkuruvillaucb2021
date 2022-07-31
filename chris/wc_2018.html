@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -37,26 +38,36 @@ body, html {
   }
 }
 
-
 </style>
 </head>
 <body> 
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
+<!-- <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="https://t6kuruvilla.github.io/tkuruvillaucb2021/index" class="w3-bar-item w3-button w3-wide">HOME</a>
-    <!-- Right-sided navbar links -->
+    <a href="https://t6kuruvilla.github.io/tkuruvillaucb2021/index.html" class="w3-bar-item w3-button w3-wide">HOME</a>
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">DEEP DIVE</a>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
-</div>
+</div> -->
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme-d2 w3-left-align">
+   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+   <a href="https://t6kuruvilla.github.io/tkuruvillaucb2021/index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>HOME</a>
+   <a href="https://t6kuruvilla.github.io/tkuruvillaucb2021/theresa/history" class="w3-bar-item w3-button w3-hide-small w3-hover-white">History</a>
+   <a href="https://t6kuruvilla.github.io/tkuruvillaucb2021/carlosM/index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">World Cup and FIFA Ranking</a>
+   <a href="https://t6kuruvilla.github.io/tkuruvillaucb2021/carlosortiz/penaltycorner.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">The Penalty Shootout Corner</a>
+   <a href="https://t6kuruvilla.github.io/tkuruvillaucb2021/chris/wc_2018.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">World Cup 2018 - Deep Dive</a>
+   <a href="https://t6kuruvilla.github.io/tkuruvillaucb2021/theresa/qatar2022" class="w3-bar-item w3-button w3-hide-small w3-hover-white">World Cup 2022</a>
+   <a href="https://t6kuruvilla.github.io/tkuruvillaucb2021/about_us.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About Us</a>
+   </div>
+   </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
@@ -73,16 +84,16 @@ body, html {
 
 <div class="w3-content w3-container w3-padding-32" id="about">
   <h3 class="w3-center" style="font-size:32px"><b>Deep Dive Into The 2018 FIFA World Cup</b></h3>
-  <p class="w3-center w3-large"><b>Interactive Analytics With Tableau Stories</b></p>
-  <p>In the section below you find a Tableau storyboard embedded in this website. 
+  <p class="w3-center w3-large"><b style="font-size:22px">Interactive Analytics With Tableau Stories</b></p>
+  <p style="font-size:18px">In the section below you find a Tableau storyboard embedded in this website. 
     On the bottom of the <b>Tableau</b> embedding, you find a tool bar with commands displayed on the right side. 
     Please click on the <b>‘Full Screen’</b> symbol on the right to expand and view the report in full screen mode for a better experience. 
     On the top of the report, you find a navigation bar that guides you through the different sections. 
     The visualizations are interactive with tooltips that display additional information when hovering the mouse cursor over a visualization.
   </p>
-  <p>The first page of the Tableau report provides you some context and explains what you find within each page of the storyboard. 
+  <p style="font-size:18px">The first page of the Tableau report provides you some context and explains what you find within each page of the storyboard. 
     If you’re interested in digging into the <b>datasets</b>, you find the relevant source files <a href="https://www.kaggle.com/datasets/aleespinosa/soccer-match-event-dataset" target="_blank"><font color="blue">here</font></a> on Kaggle.</p>
-  <p>Enjoy exploring!</p>
+  <p style="font-size:18px">Enjoy exploring!</p>
 </div>
 
 <div id="vizContainer" style="height:100%; width: 100%;"></div>
