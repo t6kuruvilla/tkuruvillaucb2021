@@ -186,7 +186,7 @@
 		<section id="scrolly">
 			<article>
 				<div class="step" data-step="1">
-					<p><b>Conversion Rate</b>
+					<p><b>Conversion Rate Part 1</b>
 						<br><br>
 						In 2012, The Economist wrote an articled titled "Penalty shoot-outs are basically still
 						crap-shoots".
@@ -199,6 +199,19 @@
 					</p>
 				</div>
 				<div class="step" data-step="2">
+					<p><b>Conversion Rate Part 2</b>
+						<br><br>
+						In 2012, The Economist wrote an articled titled "Penalty shoot-outs are basically still
+						crap-shoots".
+						The article presents data and insights that point to what the Economist considered a conslusive
+						insight that penalty shootouts are chance events.
+						This site will let you lay rest to this question and make up your own mind based on data.
+						In 10 minutes and a few clicks we expect you to have a data driven conclussion on whether
+						penalty shootouts are chance events or not.
+						Please follow the steps and instructions bellow to participate.
+					</p>
+				</div>
+				<div class="step" data-step="3">
 					<p><b>Conversion Rate per Number of Penalty on Shootout</b>
 						<br><br>
 						Let's look at the conversion rate of ELITE team's vs NON ELITE TEAMS based on the number of
@@ -224,7 +237,7 @@
 						What does the data you're observing tell you about the performance of ELITE vs NON ELITE teams?
 					</p>
 				</div>
-				<div class="step" data-step="3">
+				<div class="step" data-step="4">
 					<p><b>Conversion Rate pero Goal Zone</b>
 						<br><br>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -238,7 +251,7 @@
 						Donec convallis libero ut nisl consectetur, vitae hendrerit massa commodo.
 					</p>
 				</div>
-				<div class="step" data-step="4">
+				<div class="step" data-step="5">
 					<p><b>Closing Statements</b>
 						<br><br>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -362,6 +375,14 @@
 
 		function chart1(countries) {
 
+			return {
+
+
+			}
+		}
+
+		function chart2(countries) {
+
 			var chart1aData = dataRatios.filter(chart1aData => countries.indexOf(chart1aData.Team) !== -1)
 			var chart1bData = dataRatios.filter(chart1bData => countries.indexOf(chart1bData.Team) == -1)
 
@@ -372,20 +393,27 @@
 					{
 						width: 550,
 						height: 455,
+						title: "Elite team global conversion rate (penalty shots converted / all taken penalty shots)",
 						data: { values: chart1aData },
-						mark: 'bar',
+						mark: {
+							type: "bar",
+							"bar": {
+								"color": "Team",
+								"tooltip": { "content": "ratio" }
+							},
+						},
 						encoding: {
 							y: {
 								field: 'Team',
 								type: 'nominal',
+								sort: "-x"
 							},
 							x: {
 								aggregate: 'average',
 								field: 'ratio',
 								type: 'quantitative',
-								sort: "ratio",
 								axis: {
-									title: 'Average of b'
+									title: 'Rate of conversion (scored penalties / total penalties)'
 								}
 							}
 						}
@@ -394,20 +422,27 @@
 
 						width: 550,
 						height: 455,
+						title: "Non-Elite team global conversion rate (penalty shots converted / all taken penalty shots)",
 						data: { values: chart1bData },
-						mark: 'bar',
+						mark: {
+							type: "bar",
+							"bar": {
+								"color": "Team",
+								"tooltip": { "content": "ratio" }
+							},
+						},
 						encoding: {
 							y: {
 								field: 'Team',
 								type: 'nominal',
+								sort: "-x"
 							},
 							x: {
 								aggregate: 'average',
 								field: 'ratio',
 								type: 'quantitative',
-								sort: "ratio",
 								axis: {
-									title: 'Average of b'
+									title: 'Rate of conversion (scored penalties / total penalties)'
 								}
 							}
 						}
@@ -419,7 +454,7 @@
 			}
 		}
 
-		function chart2(countries) {
+		function chart3(countries) {
 
 			var chart2aData = penaltyData.filter(chart2aData => countries.indexOf(chart2aData.Team) !== -1)
 			var chart2bData = penaltyData.filter(chart2bData => countries.indexOf(chart2bData.Team) == -1)
@@ -436,12 +471,14 @@
 							{
 								mark: {
 									type: "line",
-									"line": { "color": "white" },
+									"line": {
+										"color": "white",
+										"tooltip": { "content": "Goal" }
+									},
 									"point": {
 										"filled": false,
 										"fill": "white",
-										"tooltip": { "content": "data" },
-										"format": ".2f"
+										"tooltip": { "content": "Goal" }
 									},
 								},
 								encoding: {
@@ -486,18 +523,20 @@
 					{
 						width: 550,
 						height: 402,
-						title: "Non Elite team conversion rate per number of penalty kick on shootout",
+						title: "Non-Elite team conversion rate per number of penalty kick on shootout",
 						data: { values: chart2bData },
 						layer: [
 							{
 								mark: {
 									type: "line",
-									"line": { "color": "white" },
+									"line": {
+										"color": "white",
+										"tooltip": { "content": "Goal" }
+									},
 									"point": {
 										"filled": false,
 										"fill": "white",
-										"tooltip": { "content": "data" },
-										"format": ".2f"
+										"tooltip": { "content": "Goal" }
 									},
 								},
 								encoding: {
@@ -543,123 +582,121 @@
 				]
 			}
 
-		}
+		}		
 
-		function chart3(countries) {
+		function chart4(countries) {
 
 			var chart3aData = dataZone.filter(chart3aData => countries.indexOf(chart3aData.Team) !== -1)
 			var chart3bData = dataZone.filter(chart3bData => countries.indexOf(chart3bData.Team) == -1)
 
-			console.log(dataZone)
-
 			return {
 
-				$schema: 'https://vega.github.io/schema/vega-lite/v5.json',
+				"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
 				hconcat: [
 					{
+
 						width: 550,
 						height: 465,
 						data: { values: chart3aData },
-						mark: {
-							type: "rect",
-							"tooltip": { "content": "data" },
-						},
 						encoding: {
 							y: { "field": "Y", "type": "quantitative", "title": "" },
 							x: { "field": "X", "type": "quantitative", "title": "" },
-							color: { "aggregate": "mean", "field": "Goal" },
-							encoding: {
-								text: { "aggregate": "mean", "field": "Goal" }
-							}
+						},
+						layer: [
+							{
+								title: "Elite team global conversion rate per goal zone",
+								data: { values: chart3aData },
+								mark: {
+									type: "rect",
+									"tooltip": { "content": "data" },
+								},
+								encoding: {
+									y: { "field": "Y", "type": "quantitative", "title": "" },
+									x: { "field": "X", "type": "quantitative", "title": "" },
+									color: { "aggregate": "mean", "field": "Goal" },
+									encoding: {
+										text: { "aggregate": "mean", "field": "Goal" }
+									}
 
-						}
+								}
+							},
+							{
+								mark: {
+									"type": "point",
+									"size": 0
+								}
+							},
+							{
+								mark: {
+									"type": "text",
+									"fontSize": { "expr": 33 },
+									"xOffset": { "expr": -100 },
+									"yOffset": { "expr": 80 }
+								},
+								encoding: {
+									text: {
+										"aggregate": "mean",
+										"field": "Goal",
+										"format": ".2%"
+									}
+								}
+							}
+						]
+
 					},
 					{
+
 						width: 550,
-						height: 465,
+						height: 465,		
 						data: { values: chart3bData },
-						mark: {
-							type: "rect",
-							"tooltip": { "content": "data" },
-						},
 						encoding: {
 							y: { "field": "Y", "type": "quantitative", "title": "" },
 							x: { "field": "X", "type": "quantitative", "title": "" },
-							color: { "aggregate": "mean", "field": "Goal" }
+						},
+						layer: [
+							{
+								title: "Elite team global conversion rate per goal zone",
+								data: { values: chart3bData },
+								mark: {
+									type: "rect",
+									"tooltip": { "content": "data" },
+								},
+								encoding: {
+									y: { "field": "Y", "type": "quantitative", "title": "" },
+									x: { "field": "X", "type": "quantitative", "title": "" },
+									color: { "aggregate": "mean", "field": "Goal" },
+									encoding: {
+										text: { "aggregate": "mean", "field": "Goal" }
+									}
 
-						}
+								}
+							},
+							{
+								mark: {
+									"type": "point",
+									"size": 0
+								}
+							},
+							{
+								mark: {
+									"type": "text",
+									"fontSize": { "expr": 33 },
+									"xOffset": { "expr": -100 },
+									"yOffset": { "expr": 80 }
+								},
+								encoding: {
+									text: {
+										"aggregate": "mean",
+										"field": "Goal",
+										"format": ".2%"
+									}
+								}
+							}
+						]
+
 					},
-
 				]
-			}
-		};
-
-
-		function chart4(countries) {
-			console.log(countries)
-			return {
-				$schema: 'https://vega.github.io/schema/vega-lite/v5.json',
-				width: 500,
-				height: 400,
-				data: {
-					values: [
-						{ a: 'C', b: 5 },
-						{ a: 'C', b: 6 },
-						{ a: 'C', b: 7 },
-						{ a: 'D', b: 6 },
-						{ a: 'D', b: 5 },
-						{ a: 'D', b: 6 },
-						{ a: 'E', b: 7 },
-						{ a: 'E', b: 5 },
-						{ a: 'E', b: 7 }
-					]
-				},
-				mark: 'line',
-				encoding: {
-					y: { field: 'a', type: 'nominal' },
-					x: {
-						aggregate: 'average',
-						field: 'b',
-						type: 'quantitative',
-						axis: {
-							title: 'Average of b'
-						}
-					}
-				}
-			};
-		}
-
-		function chart5(countries) {
-			console.log(countries)
-			return {
-				$schema: 'https://vega.github.io/schema/vega-lite/v5.json',
-				width: 500,
-				height: 400,
-				data: {
-					values: [
-						{ a: 'C', b: 9 },
-						{ a: 'C', b: 8 },
-						{ a: 'C', b: 7 },
-						{ a: 'D', b: 8 },
-						{ a: 'D', b: 8 },
-						{ a: 'D', b: 9 },
-						{ a: 'E', b: 8 },
-						{ a: 'E', b: 9 },
-						{ a: 'E', b: 8 }
-					]
-				},
-				mark: 'circle',
-				encoding: {
-					y: { field: 'a', type: 'nominal' },
-					x: {
-						aggregate: 'average',
-						field: 'b',
-						type: 'quantitative',
-						axis: {
-							title: 'Average of b'
-						}
-					}
-				}
 			};
 		}
 
