@@ -15,6 +15,9 @@
 	<script src="./penaltyNumber.js"></script>
 	<script src="./dataZone.js"></script>
 	<script src="./dataRatios.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<style media="screen">
 		/* Add space between Vega-Embed links  */
@@ -97,23 +100,38 @@
 
 <body>
 
-	<!-- Navbar (sit on top) -->
+	<!-- Navbar -->
 	<div class="w3-top">
-		<div class="w3-bar w3-white w3-card" id="myNavbar">
-			<a href="https://t6kuruvilla.github.io/tkuruvillaucb2021/index"
-				class="w3-bar-item w3-button w3-wide">HOME</a>
-			</a>
+		<div class="w3-bar w3-theme-d2 w3-left-align">
+			<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+				href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+			<a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>HOME</a>
+			<a href="https://t6kuruvilla.github.io/tkuruvillaucb2021/theresa/history"
+				class="w3-bar-item w3-button w3-hide-small w3-hover-white">World Cup Winners</a>
+			<a href="https://t6kuruvilla.github.io/tkuruvillaucb2021/carlosM/index.html"
+				class="w3-bar-item w3-button w3-hide-small w3-hover-white">World Cup and FIFA Ranking</a>
+			<a href="https://t6kuruvilla.github.io/tkuruvillaucb2021/carlosortiz/penaltycorner.html"
+				class="w3-bar-item w3-button w3-hide-small w3-hover-white">The Penalty Shootout Corner</a>
+			<a href="https://t6kuruvilla.github.io/tkuruvillaucb2021/chris/wc_2018.html"
+				class="w3-bar-item w3-button w3-hide-small w3-hover-white">World Cup 2018 - Deep Dive</a>
+			<a href="https://t6kuruvilla.github.io/tkuruvillaucb2021/theresa/qatar2022"
+				class="w3-bar-item w3-button w3-hide-small w3-hover-white">World Cup 2022</a>
+			<a href="https://t6kuruvilla.github.io/tkuruvillaucb2021/about_us.html"
+				class="w3-bar-item w3-button w3-hide-small w3-hover-white">About Us</a>
 		</div>
 	</div>
 
 	<main>
 		<section id="intro">
+			<br>
+			<br>
+			<br>
 			<h1 class="intro__hed">The Penalty Shootout Corner</h1>
 			<p class="intro__dek">
 				<br>
 			<h3>A quick intro: What is this all about?</h3>
 			<br>
-			Welcome to the Penalty Kick Corner. In 2018, The Economist wrote an articled titled "Penalty shoot-outs are
+			Welcome to the Penalty Shootout Corner. In 2018, The Economist wrote an articled titled "Penalty shoot-outs are
 			basically still crap-shoots". The article presented a data driven insight suggetsing that penalty shootouts
 			pretty much chance events.
 			This site will let you lay rest to this question and make up your own mind based on data. In 10 minutes and
@@ -128,11 +146,9 @@
 			would we? If elite teams are performing better on penalty shootouts, wouldn't that mean that penalty
 			shootouts are not chance events, and that the skill, mental clarity and stress management that comes with
 			being elite improves your chances of success? We don't want to bias you on what consititutes an elite team.
-			It's entirely your call. Choose on the drop down menu between eight and 10 teams that you consider elite.
+			It's entirely your call. Choose on the menu bellow, between eight and 10 teams that you consider elite.
 			Make sure that the ~8 to 10 teams you choose are what you personally consider the best amongst the list of
-			all teams available. Everything you don't choose will be sent to the NON-ELITE team list. The data
-			visualizations bellow will bot show until you have between 8 and 10 teams selected. Presenting the
-			information before you make your selection, could bias your selection!
+			all teams available. Everything you don't choose will be sent to the NON-ELITE team list. 
 			</p>
 			<br>
 
@@ -187,32 +203,21 @@
 		<section id="scrolly">
 			<article>
 				<div class="step" data-step="1">
-					<p><b>Conversion Rate Part 1</b>
+					<p><b>Conversion Rate</b>
 						<br><br>
-						In 2012, The Economist wrote an article titled "Penalty shoot-outs are basically still
-						crap-shoots".
-						The article presents data and insights that point to what the Economist considered a conslusive
-						insight that penalty shootouts are chance events.
-						This site will let you lay rest to this question and make up your own mind based on data.
-						In 10 minutes and a few clicks we expect you to have a data driven conclussion on whether
-						penalty shootouts are chance events or not.
-						Please follow the steps and instructions bellow to participate.
+						Let's begin with conversion rates. 
+						<br><br>
+						By conversion rates we mean how many penalty kicks does a team convert from the total they take.
+						Again, if penalty shootouts are chance events, the conversion rates of the best team and the worst team should not be statistically significant correct?
+						Would you expect to have a better conversion rate in a flip coin contest against anyone in the world (good or bad at flip coin)?
+						You wouldn't, right?
+						<br><br> 
+						Take a look at the teams you chose as elites (left hand plot) and the teams on the non elite list (right hand plot).
+						<br><br>
+						Do they look different to you? Is there any interesting insight you can learn from this information about the performance of elites vs non elites?
 					</p>
 				</div>
 				<div class="step" data-step="2">
-					<p><b>Conversion Rate Part 2</b>
-						<br><br>
-						In 2012, The Economist wrote an articled titled "Penalty shoot-outs are basically still
-						crap-shoots".
-						The article presents data and insights that point to what the Economist considered a conslusive
-						insight that penalty shootouts are chance events.
-						This site will let you lay rest to this question and make up your own mind based on data.
-						In 10 minutes and a few clicks we expect you to have a data driven conclussion on whether
-						penalty shootouts are chance events or not.
-						Please follow the steps and instructions bellow to participate.
-					</p>
-				</div>
-				<div class="step" data-step="3">
 					<p><b>Conversion Rate per Number of Penalty on Shootout</b>
 						<br><br>
 						Let's look at the conversion rate of ELITE team's vs NON ELITE TEAMS based on the number of
@@ -238,32 +243,21 @@
 						What does the data you're observing tell you about the performance of ELITE vs NON ELITE teams?
 					</p>
 				</div>
-				<div class="step" data-step="4">
+				<div class="step" data-step="3">
 					<p><b>Conversion Rate pero Goal Zone</b>
 						<br><br>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Etiam vehicula efficitur tristique.
-						Suspendisse non accumsan mi, non gravida erat.
-						Interdum et malesuada fames ac ante ipsum primis in faucibus.
-						Maecenas purus ante, vestibulum nec justo at, porta cursus mauris.
-						Integer fermentum elementum est, nec laoreet massa vehicula eu.
-						Vestibulum venenatis ipsum nisi, a tempor lectus laoreet sit amet.
-						Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-						Donec convallis libero ut nisl consectetur, vitae hendrerit massa commodo.
-					</p>
-				</div>
-				<div class="step" data-step="5">
-					<p><b>Closing Statements</b>
+						Now we come to the goal zone.
 						<br><br>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Etiam vehicula efficitur tristique.
-						Suspendisse non accumsan mi, non gravida erat.
-						Interdum et malesuada fames ac ante ipsum primis in faucibus.
-						Maecenas purus ante, vestibulum nec justo at, porta cursus mauris.
-						Integer fermentum elementum est, nec laoreet massa vehicula eu.
-						Vestibulum venenatis ipsum nisi, a tempor lectus laoreet sit amet.
-						Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-						Donec convallis libero ut nisl consectetur, vitae hendrerit massa commodo.
+						The grid you see represents the goal and each of the nine zones that the goal has been divided into for this exercise.
+						<br><br>
+						The label you see in each zone represents the conversion rate of penalties shot into that zone by elites (left hand) and non elites (right hand).
+						<br><br>
+						What can you learn about the conversion rates? 
+						<br><br>
+						Would you expect elite teams to have more speed in their shootings (more strength), and this better conversion rates per zone?
+						<br><br>
+						What about the center zone where the goal keeper traditionally stands? Are there differences between elite and non elite teams when shooting at the center?
+						What does that tell you about the confidence of the shooter on his own skills?
 					</p>
 				</div>
 			</article>
@@ -351,10 +345,6 @@
 					return vegaEmbed('#vis', chart2(countries));
 				case 3:
 					return vegaEmbed('#vis', chart3(countries));
-				case 4:
-					return vegaEmbed('#vis', chart4(countries));
-				case 5:
-					return vegaEmbed('#vis', chart5(countries));
 			}
 		}
 
@@ -375,14 +365,6 @@
 		}
 
 		function chart1(countries) {
-
-			return {
-
-
-			}
-		}
-
-		function chart2(countries) {
 
 			var chart1aData = dataRatios.filter(chart1aData => countries.indexOf(chart1aData.Team) !== -1)
 			var chart1bData = dataRatios.filter(chart1bData => countries.indexOf(chart1bData.Team) == -1)
@@ -455,7 +437,7 @@
 			}
 		}
 
-		function chart3(countries) {
+		function chart2(countries) {
 
 			var chart2aData = penaltyData.filter(chart2aData => countries.indexOf(chart2aData.Team) !== -1)
 			var chart2bData = penaltyData.filter(chart2bData => countries.indexOf(chart2bData.Team) == -1)
@@ -585,7 +567,7 @@
 
 		}
 
-		function chart4(countries) {
+		function chart3(countries) {
 
 			var chart3aData = dataZone.filter(chart3aData => countries.indexOf(chart3aData.Team) !== -1)
 			var chart3bData = dataZone.filter(chart3bData => countries.indexOf(chart3bData.Team) == -1)
