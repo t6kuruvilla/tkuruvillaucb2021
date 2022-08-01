@@ -226,7 +226,7 @@ confgraph_concat('#chart1f', year, wcdata)
 // Wait of Click on button action
 d3.select("#select1").on("change", function() {
 
-  var year = d3.select(this).property("value")
+  year = d3.select(this).property("value")
   console.log(year);
 
   countrywc = wclist[year]
@@ -265,7 +265,7 @@ d3.select("#select2").on("change", function() {
 // Wait of Click on button action
 d3.select("#select3").on("change", function() {
 
-    var metric = d3.select(this).property("value")
+    metric = d3.select(this).property("value")
     console.log(metric);
 
     confgraphoverall('#chart0', metric, wcdata)
