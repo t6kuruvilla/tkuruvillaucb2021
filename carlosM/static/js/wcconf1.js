@@ -4,6 +4,7 @@
 // Reference: https://vega.github.io/vega-lite/usage/embed.html
 // Reference aggregations: https://vega.github.io/vega-lite/docs/aggregate.html
 
+console.log(metric)
 
 function initdropmenu(){
 
@@ -77,24 +78,25 @@ function initdropmenu(){
   };
 
 initdropmenu()
-wcconfgraph('#chart3', metric2, wcdata)
-wcconfgraph_selected('#chart3a', metric2, wcdata, confname)
+wcconfgraph('#chart3', metric, wcdata)
+wcconfgraph_selected('#chart3a', metric, wcdata, confname)
 
 
 d3.select("#select5").on("change", function() {
 
-  var metric = d3.select(this).property("value")
-  console.log(metric);
+  metric = d3.select(this).property("value")
+  console.log("IN selection: ", metric)
 
   wcconfgraph('#chart3', metric, wcdata)
+  wcconfgraph_selected('#chart3a', metric, wcdata, confname)
 
 });
 
 
 d3.select("#select6").on("change", function() {
 
-  var confname = d3.select(this).property("value")
+  confname = d3.select(this).property("value")
 
-  wcconfgraph_selected('#chart3a', metric2, wcdata, confname)
+  wcconfgraph_selected('#chart3a', metric, wcdata, confname)
 
 });
