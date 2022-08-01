@@ -34,6 +34,7 @@ function conf_country_concat(chartid, year, metric, datawc){
   var widthg = 150
 
   console.log("IN CONCAT : ", metric)
+
   var spec = {
       $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
       
@@ -56,8 +57,8 @@ function conf_country_concat(chartid, year, metric, datawc){
               width: 400,
               encoding: {
                 x: {field: 'Team',  type: 'ordinal',sort: "-y" },
-                y: {field: "Points", aggregate: 'mean', type: 'quantitative', sort: "ascending"},
-                tooltip: [{field: "Points", aggregate: 'mean', type: 'quantitative'},
+                y: {field: metric, aggregate: 'mean', type: 'quantitative', sort: "ascending"},
+                tooltip: [{field: metric, aggregate: 'mean', type: 'quantitative'},
                           {field: 'Team', type: 'ordinal'}],
                 color:  {field: 'confederation', type: 'nominal'}
               }
