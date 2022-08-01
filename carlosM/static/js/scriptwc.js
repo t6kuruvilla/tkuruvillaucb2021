@@ -228,7 +228,7 @@ d3.select("#select1").on("change", function() {
 
   var year = d3.select(this).property("value")
   console.log(year);
-  
+
   countrywc = wclist[year]
   countywon = wcwon[year]
 
@@ -272,34 +272,6 @@ d3.select("#select3").on("change", function() {
 
 });
 
-
-// Select the button
-var button1 = d3.select("#Buton1");    
-
-button1.on("click", function() {
-
-    console.log("IN BUTTON 1")
-    
-    selectElement = document.querySelector('#select1');
-    year = selectElement.options[selectElement.selectedIndex].value;
-    console.log(year);
-
-    selectElement2 = document.querySelector('#select2');
-    metric = selectElement2.options[selectElement2.selectedIndex].value;
-    console.log(metric);
-
-    countrywc = wclist[year]
-    countywon = wcwon[year]
-
-    var text1 = "World cup of "+year+"  took place in <b><span style='color: darkblue'>"+countrywc+"</span></b>, and it was won by <b><span style='color: darkblue'>"+countywon+"</span></b>!";
-    const element = document.getElementById("id01");
-    element.innerHTML = text1;
-
-    confgraph('#chart1', year, metric, wcdata)     // chartid = '#chart'; datawc= wcdata
-    teamgraph('#chart2', year, metric, wcdata)
-    confgraph_concat('#chart1f', year, wcdata)
-
-});
 
 
 

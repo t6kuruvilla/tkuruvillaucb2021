@@ -90,7 +90,7 @@ d3.select("#select5").on("change", function() {
   wcconfgraph('#chart3', metric, wcdata)
   wcconfgraph_selected('#chart3a', metric, wcdata, confname)
 
-});
+}); 
 
 
 d3.select("#select6").on("change", function() {

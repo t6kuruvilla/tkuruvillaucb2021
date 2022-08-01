@@ -2,6 +2,27 @@
 
   /* Clear floats after the columns */
 
+  /* body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+
+  body, html {
+    height: 100%;
+    line-height: 1.8;
+  } */
+  
+  /* Full height image header */
+  /* .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/worldcupfootball.jpeg");
+    min-height: 100%;
+  } */
+  
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
+  
+
+
     body {
       /* margin: 50px 200px 50px 100px; */
       margin-top: 50px;

@@ -155,7 +155,7 @@ d3.select("#select4").on("change", function() {
 
   fifarank('#chart4', country, fifar, wcdata)
 
-});
+}); 
 
 
 // Select the button
